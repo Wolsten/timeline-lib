@@ -1,0 +1,38 @@
+{
+    "start": 1800,
+    "end": 1900,
+    "min": false,
+    "max": false,
+    "slug": "the-origins-of-taiwan",
+    "name": "The origins of Taiwan",
+    "categories": [
+        "geopolitics"
+    ],
+    "events": [
+        {
+            "id": 52,
+            "name": "Birth of Taiwan",
+            "categories": [
+                "geopolitics"
+            ],
+            "subCategory": "taiwan",
+            "start": 1800,
+            "end": 1900,
+            "startDate": {
+                "year": 1800,
+                "month": 0,
+                "day": 0,
+                "decimal": 1800
+            },
+            "endDate": {
+                "year": 1900,
+                "month": 0,
+                "day": 0,
+                "decimal": 1900
+            },
+            "summary": "The birth of Taiwan",
+            "citations": "Citation needed"
+        }
+    ],
+    "series": []
+}

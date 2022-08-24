@@ -1,0 +1,255 @@
+:root {
+
+    /* https://materialui.co/colors
+       Saturation 500 */
+    --material-500-red: rgb(244, 67, 54);
+    --material-500-pink: rgb(233, 30, 99);
+    --material-500-purple: rgb(156, 39, 176);
+    --material-500-deep-purple: rgb(103, 58, 183);
+    --material-500-indigo: rgb(63, 81, 181);
+    --material-500-blue: rgb(33, 150, 243);
+    --material-500-light-blue: rgb(3, 169, 244);
+    --material-500-cyan: rgb(0, 188, 212);
+    --material-500-teal: rgb(0, 150, 136);
+    --material-500-green: rgb(76, 175, 80);
+    --material-500-light-green: rgb(139, 195, 74);
+    --material-500-lime: rgb(205, 220, 57);
+    --material-500-yellow: rgb(255, 235, 59);
+    --material-500-amber: rgb(255, 193, 7);
+    --material-500-orange: rgb(255, 152, 0);
+    --material-500-deep-orange: rgb(255, 87, 34);
+    --material-500-brown: rgb(121, 85, 72);
+    --material-500-grey: rgb(158, 158, 158);
+    --material-500-blue-grey: rgb(96, 125, 139);
+
+    /* --material-700-red: rgb(211, 47, 47);
+    --material-900-red: rgb(183, 28, 28); */
+
+    --material-50-grey: #fafafa;
+    --material-100-grey: rgb(245, 245, 245);
+
+    --material-50-blue-grey: rgb(236, 239, 241);
+    --material-100-blue-grey: rgb(207, 216, 220);
+    --material-200-blue-grey: rgb(176, 190, 197);
+    --material-300-blue-grey: rgb(144, 164, 174);
+    --material-400-blue-grey: rgb(120, 144, 156);
+    --material-600-blue-grey: rgb(84, 110, 122);
+    --material-700-blue-grey: rgb(69, 90, 100);
+
+    --material-700-red: rgb(211, 47, 47);
+
+
+    /* Custom colour variables */
+
+    --colour-background: white;
+
+    --colour-font: var(--material-600-blue-grey);
+    --colour-font-faint: var(--material-400-blue-grey);
+    --colour-font-titles: var(--material-700-blue-grey);
+
+    /* --colour-link: var(--material-200-blue-grey); */
+    --colour-link: var(--material-700-red);
+    /* --colour-link-hover: var(--material-300-blue-grey); */
+    --colour-link-hover: var(--material-500-red);
+
+    /* --colour-menu : var(--material-600-blue-grey);
+    --colour-menu-hover : var(--material-500-blue-grey); */
+
+    --colour-menu: var(--material-700-red);
+    --colour-menu-hover: var(--material-700-red);
+
+    --colour-post-title-hover: white;
+
+    --colour-box-shadow: var(--material-200-blue-grey);
+
+    --colour-chart-background: var(--material-50-grey);
+    --colour-faint-lines: var(--material-200-blue-grey);
+    --colour-legend-highlight: var(--material-200-blue-grey);
+
+    --colour-input-border: var(--material-200-blue-grey);
+    --colour-toggle: var(--material-500-blue-grey);
+    --colour-toggle-hover: var(--material-300-blue-grey);
+    /* --colour-toggle-hover-font: var(--material-500-amber); */
+    --colour-toggle-hover-font: white;
+    --colour-range-slider-fill: var(--material-100-grey);
+
+
+    /* Other custom variables */
+
+    --opacity-faint: 0.4;
+
+    --size-post-height: 300px;
+    --size-x-padding: 2%;
+
+    --size-input-border-radius: 0.4rem;
+    --size-input-padding: 0.3rem 0.6rem;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--colour-font);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:599px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--colour-font-titles);
+
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 2rem;
+    position: relative;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+li {
+    padding: 0.5rem;
+    text-align: left;
+    line-height: 1.4rem;
+    ;
+}
+
+
+.sub-title {
+    font-weight: bold;
+}
+
+a.cite {
+    display: inline-block;
+    position: relative;
+    top: -0.5rem;
+    left: -0.3rem;
+    font-size: 0.7rem;
+    margin-right: -0.3rem;
+    text-decoration: none;
+}
+
+a.cite:hover {
+    text-decoration: underline;
+}
+
+a.cite:before {
+    content: '['
+}
+
+a.cite:after {
+    content: ']'
+}
+
+blockquote {
+    line-height: 1.8rem;
+    font-style: italic;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+blockquote:before {
+    content: '"';
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    font-size: 4rem;
+    color: var(--colour-font-faint);
+}
+
+sup {
+    position: relative;
+    vertical-align: top;
+    top: -0.5rem;
+}
+
+.credit {
+    margin-top: 3rem;
+}
+
+.page-container {
+    max-width: 76ch;
+    margin: 1rem auto 1rem auto;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+button,
+a {
+    transition: background-color ease-in 500ms;
+}
+
+
+
+/* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+.wrap-all {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    hyphens: auto;
+}
+
+
+/* Overrides for when used as a component in a Wordpress site  */
+
+/* figure.timeline * {
+    font-size:1rem !important;
+}
+
+figure.timeline svg text {
+    font-size:0.8rem !important;
+}
+
+figure.timeline button {
+    background-color: white !important;
+    color: var(--colour-font) !important;
+    border: 1px solid var(--colour-faint-lines) !important;
+    line-height: normal !important;
+}
+
+figure.timeline .holder span {
+    line-height: normal !important;
+}
+
+figure.timeline .date-range div {
+    line-height: normal !important;
+}
+
+figure.timeline button:not(:disabled):hover {
+    background: var(--colour-toggle-hover) !important;
+} */
