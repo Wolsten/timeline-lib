@@ -1,5 +1,4 @@
 import { dev } from '$app/env';
-import { isTemplateMiddle } from 'typescript';
 
 const SYMBOLS = 7 // Must match number of symbol classes in Symbol.svelte
 const MIN_EVENT_WIDTH = 4
@@ -143,8 +142,10 @@ const eventDates = function (event) {
 
 
 const initXAxis = function (start, end) {
-	const s = start.year ? start.year : start.decimal
-	const e = end.year ? end.year : end.decimal
+	// const s = start.year ? start.year : start.decimal
+	// const e = end.year ? end.year : end.decimal
+	const s = parseFloat(start.decimal)
+	const e = parseFloat(end.decimal)
 	const axis = {
 		values: [],
 		ticks: [],
@@ -159,6 +160,7 @@ const initXAxis = function (start, end) {
 
 
 const initSettings = function (userSettings, start, end, subCats) {
+
 	// Apply default settings where required
 	// Note that only non-defaults should be set in user settings
 	let settings = {
@@ -171,21 +173,30 @@ const initSettings = function (userSettings, start, end, subCats) {
 		filter: userSettings.filter || '',
 		title: userSettings.title || '',
 		sort: userSettings.sort || 'x',
-		subCats: userSettings?.subCats?.length > 0 ? userSettings.subCats : subCats
+		subCats: userSettings?.subCats?.length > 0 ? userSettings.subCats : subCats,
+
 	}
 	// If have no user settings for xRange then use the data otherwise apply user settings,
 	// checking for whether dealing with dates or simple numbers
-	let s, e
-	if (userSettings.xRange === undefined) {
-		s = start.year ? start.year : start
-		e = end.year ? end.year : end
-	} else {
-		s = userSettings.xRange.start?.year ? userSettings.xRange.start.year : userSettings.xRange.start
-		e = userSettings.xRange.end?.year ? userSettings.xRange.end.year : userSettings.xRange.end
-	}
+	// let s, e
+
+
+	// if (userSettings.xRange === undefined) {
+	// 	s = start.year ? start.year : start.decimal
+	// 	e = end.year ? end.year : end.decimal
+	// } else {
+	// 	s = userSettings.start
+	// 	e = userSettings.end
+	// }
+
+	console.log('start', start)
+
+	const s = userSettings.start !== undefined ? userSettings.start : start
+	const e = userSettings.end !== undefined ? userSettings.end : end
+
 	settings.xRange = {
-		start: s,
-		end: e,
+		start: parseFloat(s),
+		end: parseFloat(e),
 		range: e - s
 	}
 	return settings
@@ -250,14 +261,14 @@ const initCategories = function (events, series) {
 							// *** IMPORTANT *** MUST PUSH A COPY NOT THE ORIGINAL
 							group.points.push({ ...point })
 						} else {
-							group.points[match].value += point.value
+							group.points[match].y += point.y
 						}
 
-						if (group.points[match].value > group.max) {
-							group.max = group.points[match].value
+						if (group.points[match].y > group.max) {
+							group.max = group.points[match].y
 						}
-						if (group.points[match].value < group.min) {
-							group.min = group.points[match].value
+						if (group.points[match].y < group.min) {
+							group.min = group.points[match].y
 						}
 
 					})
@@ -310,9 +321,7 @@ const initSeriesColours = function (series, groups) {
 
 
 const processDataset = function (data) {
-	// Init extremes
-	data.start = false
-	data.end = false
+
 	// Convert end string dates to date objects and find extremes
 	data.events.forEach((event) => {
 		// Start date
@@ -328,36 +337,49 @@ const processDataset = function (data) {
 			if (event.end !== '-') {
 				event.end = getDateParts(event.end)
 				if (event.end) {
-					if (!data.end || compareDates(data.end, event.end) == DATE_BEFORE) {
+					if (data.start === undefined || compareDates(data.start, event.end) == DATE_BEFORE) {
+						data.end = event.start
+					}
+					if (data.end === undefined || compareDates(data.end, event.end) == DATE_BEFORE) {
 						data.end = event.end
 					}
 				} else {
-					if (!data.start || compareDates(data.start, event.end) == DATE_BEFORE) {
-						data.end = event.start
-					}
 				}
 			}
 		}
 	})
-	// Do the same for each series - would only have these if the 
-	// xUnits are both 'dates'
+	// Do the same for each series
+	// Would only have these if the xUnits are both 'dates' or have no events
 	data.series.forEach((item) => {
 		item.points.forEach(point => {
-			if (!data.start || data.start.decimal < point.x) {
-				data.start = { decimal: point.x }
+			// Start and end x range
+			// Handle as dates
+			if (data.xUnit === 'date') {
+				point.x = getDateParts(point.x)
+				if (data.start === undefined || compareDates(data.start, point.x) == DATE_BEFORE) {
+					data.end = point.x
+				}
+				if (data.end === undefined || compareDates(data.end, point.x) == DATE_BEFORE) {
+					data.end = point.x
+				}
+				// Handle numbers
+			} else {
+				if (data.start === undefined || data.start.decimal < point.x) {
+					data.start = { decimal: point.x }
+				}
+				if (data.end === undefined || point.x < data.end.decimal) {
+					data.end = { decimal: point.x }
+				}
 			}
-			if (!data.end || point.x < data.end.decimal) {
-				data.end = { decimal: point.x }
+			// Max and min y values
+			if (data.min === undefined || point.y < data.min) {
+				data.min = point.y
+			}
+			if (data.max === undefined || point.y > data.max) {
+				data.max = point.y
 			}
 		})
 	})
-	// Set end year to be the start of the following year
-	// if ( data.xUnit === 'date' ){
-	// 	data.end.year = data.end.year + 1
-	// 	data.end.month = 0
-	// 	data.end.day = 0
-	// 	data.end.decimal = data.end.year
-	// }
 
 	// Initialise x axis
 	data.xAxis = initXAxis(data.start, data.end)
@@ -617,10 +639,11 @@ const processSeries = function (set, scale, startValue, endValue) {
 				const newPoint = {
 					index,
 					i,
-					value: point.value,
 					xLabel,
 					x: parseInt(x),
-					y: 0 // To be scaled in the component
+					y: point.y,
+					// @todo Will need to fix in component - think done in Canvas but need to check
+					//y: 0 // To be scaled in the component
 				}
 
 				filtered[index].data.push(newPoint)
@@ -671,7 +694,7 @@ const scaleXAxis = function (xUnit, xAxis, drawingWidth, optionsXRange) {
 
 		// console.log('units',units)
 
-		if (xUnit == 'date') {
+		if (xUnit === 'date') {
 			newAxis.values.push(parseInt(dataX))
 			newAxis.labels.push(formatYear(parseInt(dataX)))
 		} else {

@@ -1,1 +1,3087 @@
-{"xUnit":"year","min":24,"max":7400000,"slug":"deaths-from-natural-disasters","name":"Deaths from natural disasters","categories":["disasters"],"events":[],"series":[{"id":1,"name":"Deaths from landslides","legend":"landslides","categories":["disasters"],"subCategory":"climate","summary":"Deaths from landslides","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1909,"end":2020,"min":36,"max":24000,"points":[{"x":1909,"value":106},{"x":1910,"value":124},{"x":1915,"value":112},{"x":1922,"value":200},{"x":1923,"value":400},{"x":1926,"value":256},{"x":1930,"value":80},{"x":1931,"value":380},{"x":1932,"value":60},{"x":1934,"value":1000},{"x":1936,"value":146},{"x":1938,"value":400},{"x":1941,"value":10000},{"x":1948,"value":1050},{"x":1949,"value":24000},{"x":1950,"value":260},{"x":1951,"value":184},{"x":1952,"value":56},{"x":1954,"value":2172},{"x":1955,"value":956},{"x":1956,"value":472},{"x":1958,"value":104},{"x":1959,"value":96},{"x":1960,"value":104},{"x":1961,"value":332},{"x":1962,"value":142},{"x":1963,"value":4066},{"x":1964,"value":216},{"x":1965,"value":460},{"x":1966,"value":1208},{"x":1967,"value":1180},{"x":1968,"value":2392},{"x":1969,"value":36},{"x":1970,"value":456},{"x":1971,"value":2040},{"x":1972,"value":1510},{"x":1973,"value":7082},{"x":1974,"value":1808},{"x":1975,"value":390},{"x":1976,"value":630},{"x":1977,"value":80},{"x":1978,"value":172},{"x":1979,"value":676},{"x":1980,"value":600},{"x":1981,"value":842},{"x":1982,"value":1306},{"x":1983,"value":2336},{"x":1984,"value":456},{"x":1985,"value":754},{"x":1986,"value":1002},{"x":1987,"value":2408},{"x":1988,"value":1904},{"x":1989,"value":890},{"x":1990,"value":282},{"x":1991,"value":1456},{"x":1992,"value":1424},{"x":1993,"value":3156},{"x":1994,"value":614},{"x":1995,"value":3042},{"x":1996,"value":2310},{"x":1997,"value":1602},{"x":1998,"value":2282},{"x":1999,"value":890},{"x":2000,"value":2024},{"x":2001,"value":1572},{"x":2002,"value":2200},{"x":2003,"value":1412},{"x":2004,"value":626},{"x":2005,"value":1328},{"x":2006,"value":3276},{"x":2007,"value":542},{"x":2008,"value":1008},{"x":2009,"value":1446},{"x":2010,"value":6854},{"x":2011,"value":618},{"x":2012,"value":1002},{"x":2013,"value":470},{"x":2014,"value":1920},{"x":2015,"value":2012},{"x":2016,"value":714},{"x":2017,"value":4624},{"x":2018,"value":550},{"x":2019,"value":1454},{"x":2020,"value":1028}]},{"id":2,"name":"Deaths from fog","legend":"fog","categories":["disasters"],"subCategory":"meteorological","summary":"Deaths from fog","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1909,"end":1952,"min":106,"max":8000,"points":[{"x":1909,"value":106},{"x":1910,"value":124},{"x":1952,"value":8000}]},{"id":3,"name":"Deaths from wildfires","legend":"wildfires","categories":["disasters"],"subCategory":"climate","summary":"Deaths from wildfires","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1911,"end":2020,"min":0,"max":2000,"points":[{"x":1911,"value":146},{"x":1918,"value":2000},{"x":1922,"value":86},{"x":1929,"value":120},{"x":1939,"value":142},{"x":1944,"value":340},{"x":1947,"value":0},{"x":1949,"value":160},{"x":1956,"value":22},{"x":1965,"value":0},{"x":1966,"value":50},{"x":1967,"value":124},{"x":1968,"value":24},{"x":1969,"value":0},{"x":1970,"value":0},{"x":1971,"value":0},{"x":1972,"value":0},{"x":1973,"value":0},{"x":1974,"value":0},{"x":1975,"value":0},{"x":1976,"value":0},{"x":1977,"value":6},{"x":1978,"value":4},{"x":1979,"value":0},{"x":1980,"value":0},{"x":1981,"value":16},{"x":1982,"value":4},{"x":1983,"value":212},{"x":1984,"value":34},{"x":1985,"value":102},{"x":1986,"value":40},{"x":1987,"value":382},{"x":1989,"value":2},{"x":1990,"value":0},{"x":1991,"value":180},{"x":1992,"value":244},{"x":1993,"value":6},{"x":1994,"value":168},{"x":1995,"value":58},{"x":1996,"value":90},{"x":1997,"value":532},{"x":1998,"value":300},{"x":1999,"value":140},{"x":2000,"value":94},{"x":2001,"value":66},{"x":2002,"value":12},{"x":2003,"value":94},{"x":2004,"value":28},{"x":2005,"value":90},{"x":2006,"value":26},{"x":2007,"value":296},{"x":2008,"value":172},{"x":2009,"value":380},{"x":2010,"value":332},{"x":2011,"value":20},{"x":2012,"value":42},{"x":2013,"value":70},{"x":2014,"value":32},{"x":2015,"value":156},{"x":2016,"value":80},{"x":2017,"value":356},{"x":2018,"value":442},{"x":2019,"value":232},{"x":2020,"value":140}]},{"id":4,"name":"Deaths from extreme temperatures","legend":"extreme temperatures","categories":["disasters"],"subCategory":"climate","summary":"Deaths from extreme temperatures","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1936,"end":2020,"min":0,"max":149396,"points":[{"x":1936,"value":3386},{"x":1951,"value":138},{"x":1953,"value":1338},{"x":1955,"value":214},{"x":1958,"value":1302},{"x":1961,"value":800},{"x":1962,"value":100},{"x":1963,"value":324},{"x":1965,"value":200},{"x":1966,"value":524},{"x":1968,"value":306},{"x":1971,"value":800},{"x":1972,"value":220},{"x":1973,"value":566},{"x":1975,"value":280},{"x":1977,"value":0},{"x":1978,"value":300},{"x":1979,"value":940},{"x":1980,"value":2778},{"x":1981,"value":600},{"x":1982,"value":800},{"x":1983,"value":410},{"x":1984,"value":580},{"x":1985,"value":912},{"x":1986,"value":100},{"x":1987,"value":2440},{"x":1988,"value":1288},{"x":1989,"value":762},{"x":1990,"value":1958},{"x":1991,"value":1670},{"x":1992,"value":776},{"x":1993,"value":212},{"x":1994,"value":682},{"x":1995,"value":3460},{"x":1996,"value":600},{"x":1997,"value":1208},{"x":1998,"value":6538},{"x":1999,"value":1542},{"x":2000,"value":1868},{"x":2001,"value":3574},{"x":2002,"value":6738},{"x":2003,"value":149396},{"x":2004,"value":510},{"x":2005,"value":5254},{"x":2006,"value":7498},{"x":2007,"value":2172},{"x":2008,"value":3480},{"x":2009,"value":2868},{"x":2010,"value":114176},{"x":2011,"value":870},{"x":2012,"value":3766},{"x":2013,"value":3544},{"x":2014,"value":2336},{"x":2015,"value":14850},{"x":2016,"value":980},{"x":2017,"value":718},{"x":2018,"value":1430},{"x":2019,"value":5818},{"x":2020,"value":12686}]},{"id":5,"name":"Deaths from floods","legend":"floods","categories":["disasters"],"subCategory":"climate","summary":"Deaths from floods","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1900,"end":2020,"min":0,"max":7400000,"points":[{"x":1900,"value":600},{"x":1903,"value":500},{"x":1906,"value":12},{"x":1909,"value":144},{"x":1910,"value":2758},{"x":1911,"value":200000},{"x":1915,"value":0},{"x":1917,"value":0},{"x":1926,"value":2000},{"x":1927,"value":6492},{"x":1928,"value":72},{"x":1930,"value":0},{"x":1931,"value":7400000},{"x":1933,"value":36106},{"x":1935,"value":284000},{"x":1936,"value":400},{"x":1937,"value":496},{"x":1938,"value":1908},{"x":1939,"value":1000020},{"x":1940,"value":250},{"x":1943,"value":1980},{"x":1947,"value":4000},{"x":1948,"value":1834},{"x":1949,"value":194000},{"x":1950,"value":7616},{"x":1951,"value":11332},{"x":1952,"value":398},{"x":1953,"value":14250},{"x":1954,"value":68872},{"x":1955,"value":1168},{"x":1956,"value":7226},{"x":1957,"value":4942},{"x":1958,"value":800},{"x":1959,"value":4006792},{"x":1960,"value":21154},{"x":1961,"value":7726},{"x":1962,"value":2360},{"x":1963,"value":2062},{"x":1964,"value":2246},{"x":1965,"value":2802},{"x":1966,"value":3846},{"x":1967,"value":4892},{"x":1968,"value":14612},{"x":1969,"value":3088},{"x":1970,"value":6492},{"x":1971,"value":4808},{"x":1972,"value":5096},{"x":1973,"value":3550},{"x":1974,"value":58862},{"x":1975,"value":41592},{"x":1976,"value":1920},{"x":1977,"value":5136},{"x":1978,"value":11790},{"x":1979,"value":2076},{"x":1980,"value":20932},{"x":1981,"value":10566},{"x":1982,"value":8332},{"x":1983,"value":4164},{"x":1984,"value":5860},{"x":1985,"value":8752},{"x":1986,"value":3564},{"x":1987,"value":13532},{"x":1988,"value":16996},{"x":1989,"value":9306},{"x":1990,"value":4502},{"x":1991,"value":11694},{"x":1992,"value":10630},{"x":1993,"value":12300},{"x":1994,"value":13542},{"x":1995,"value":15912},{"x":1996,"value":16094},{"x":1997,"value":15370},{"x":1998,"value":21306},{"x":1999,"value":69614},{"x":2000,"value":12050},{"x":2001,"value":10028},{"x":2002,"value":8354},{"x":2003,"value":7820},{"x":2004,"value":13964},{"x":2005,"value":11508},{"x":2006,"value":11686},{"x":2007,"value":17214},{"x":2008,"value":8014},{"x":2009,"value":7254},{"x":2010,"value":16712},{"x":2011,"value":12326},{"x":2012,"value":7088},{"x":2013,"value":19638},{"x":2014,"value":7072},{"x":2015,"value":6958},{"x":2016,"value":8794},{"x":2017,"value":6674},{"x":2018,"value":5762},{"x":2019,"value":10322},{"x":2020,"value":12358}]},{"id":6,"name":"Deaths from volcanic activity","legend":"volcanic activity","categories":["disasters"],"subCategory":"geophysical","summary":"Deaths from volcanic activity","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1900,"end":2020,"min":0,"max":77380,"points":[{"x":1900,"value":60},{"x":1902,"value":77380},{"x":1903,"value":34},{"x":1906,"value":1400},{"x":1911,"value":2670},{"x":1914,"value":280},{"x":1919,"value":10000},{"x":1926,"value":288},{"x":1930,"value":2738},{"x":1931,"value":2600},{"x":1937,"value":1012},{"x":1943,"value":0},{"x":1944,"value":52},{"x":1945,"value":0},{"x":1946,"value":0},{"x":1948,"value":200},{"x":1949,"value":4000},{"x":1950,"value":168},{"x":1951,"value":9600},{"x":1952,"value":58},{"x":1953,"value":300},{"x":1954,"value":74},{"x":1956,"value":0},{"x":1957,"value":0},{"x":1960,"value":0},{"x":1963,"value":3410},{"x":1964,"value":8},{"x":1965,"value":710},{"x":1966,"value":2176},{"x":1968,"value":180},{"x":1969,"value":0},{"x":1971,"value":0},{"x":1973,"value":0},{"x":1975,"value":4},{"x":1976,"value":82},{"x":1977,"value":430},{"x":1978,"value":0},{"x":1979,"value":536},{"x":1980,"value":180},{"x":1981,"value":384},{"x":1982,"value":260},{"x":1983,"value":0},{"x":1984,"value":74},{"x":1985,"value":43600},{"x":1986,"value":3492},{"x":1987,"value":0},{"x":1988,"value":14},{"x":1989,"value":0},{"x":1990,"value":66},{"x":1991,"value":1366},{"x":1992,"value":2},{"x":1993,"value":198},{"x":1994,"value":202},{"x":1995,"value":0},{"x":1996,"value":8},{"x":1997,"value":106},{"x":1998,"value":0},{"x":1999,"value":0},{"x":2000,"value":0},{"x":2001,"value":0},{"x":2002,"value":400},{"x":2003,"value":0},{"x":2004,"value":4},{"x":2005,"value":6},{"x":2006,"value":10},{"x":2007,"value":22},{"x":2008,"value":32},{"x":2009,"value":0},{"x":2010,"value":646},{"x":2011,"value":6},{"x":2012,"value":0},{"x":2013,"value":0},{"x":2014,"value":204},{"x":2015,"value":0},{"x":2017,"value":0},{"x":2018,"value":1828},{"x":2019,"value":42},{"x":2020,"value":2}]},{"id":7,"name":"Deaths from drought","legend":"drought","categories":["disasters"],"subCategory":"climate","summary":"Deaths from drought","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1900,"end":2020,"min":0,"max":6000000,"points":[{"x":1900,"value":2522000},{"x":1903,"value":0},{"x":1906,"value":0},{"x":1910,"value":170000},{"x":1919,"value":0},{"x":1920,"value":1048000},{"x":1921,"value":2400000},{"x":1928,"value":6000000},{"x":1931,"value":0},{"x":1933,"value":0},{"x":1940,"value":40000},{"x":1942,"value":3000000},{"x":1943,"value":3800000},{"x":1946,"value":60000},{"x":1947,"value":0},{"x":1960,"value":0},{"x":1961,"value":0},{"x":1963,"value":0},{"x":1964,"value":100},{"x":1965,"value":3004000},{"x":1966,"value":16000},{"x":1967,"value":1200},{"x":1968,"value":0},{"x":1969,"value":0},{"x":1970,"value":0},{"x":1971,"value":0},{"x":1972,"value":0},{"x":1973,"value":238000},{"x":1974,"value":0},{"x":1976,"value":0},{"x":1977,"value":0},{"x":1978,"value":126},{"x":1979,"value":36},{"x":1980,"value":6000},{"x":1981,"value":201000},{"x":1982,"value":560},{"x":1983,"value":900040},{"x":1984,"value":460},{"x":1985,"value":0},{"x":1986,"value":168},{"x":1987,"value":2634},{"x":1988,"value":3200},{"x":1989,"value":474},{"x":1990,"value":0},{"x":1991,"value":4000},{"x":1992,"value":0},{"x":1993,"value":0},{"x":1994,"value":0},{"x":1995,"value":0},{"x":1996,"value":0},{"x":1997,"value":1464},{"x":1998,"value":40},{"x":1999,"value":764},{"x":2000,"value":118},{"x":2001,"value":216},{"x":2002,"value":1158},{"x":2003,"value":18},{"x":2004,"value":160},{"x":2005,"value":298},{"x":2006,"value":268},{"x":2007,"value":0},{"x":2008,"value":16},{"x":2009,"value":0},{"x":2010,"value":40000},{"x":2011,"value":0},{"x":2012,"value":0},{"x":2013,"value":0},{"x":2014,"value":0},{"x":2015,"value":70},{"x":2016,"value":0},{"x":2017,"value":0},{"x":2018,"value":0},{"x":2019,"value":170},{"x":2020,"value":90}]},{"id":8,"name":"Deaths from mass movements","legend":"mass movements","categories":["disasters"],"subCategory":"geophysical","summary":"Deaths from mass movements","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1903,"end":2018,"min":6,"max":4000,"points":[{"x":1903,"value":152},{"x":1905,"value":36},{"x":1908,"value":66},{"x":1937,"value":80},{"x":1955,"value":6},{"x":1962,"value":4000},{"x":1963,"value":300},{"x":1971,"value":62},{"x":1980,"value":100},{"x":1982,"value":92},{"x":1983,"value":914},{"x":1985,"value":600},{"x":1987,"value":366},{"x":1988,"value":314},{"x":1989,"value":110},{"x":1990,"value":146},{"x":1991,"value":172},{"x":1992,"value":646},{"x":1993,"value":362},{"x":2000,"value":22},{"x":2002,"value":120},{"x":2004,"value":88},{"x":2006,"value":22},{"x":2008,"value":240},{"x":2009,"value":72},{"x":2012,"value":32},{"x":2013,"value":92},{"x":2015,"value":26},{"x":2017,"value":16},{"x":2018,"value":34}]},{"id":9,"name":"Deaths from storms","legend":"storms","categories":["disasters"],"subCategory":"climate","summary":"Deaths from storms","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1900,"end":2020,"min":0,"max":608990,"points":[{"x":1900,"value":12000},{"x":1902,"value":1200},{"x":1903,"value":326},{"x":1904,"value":0},{"x":1905,"value":480},{"x":1906,"value":20596},{"x":1909,"value":1426},{"x":1910,"value":60},{"x":1911,"value":2000},{"x":1912,"value":102340},{"x":1913,"value":1464},{"x":1914,"value":0},{"x":1915,"value":4250},{"x":1916,"value":600},{"x":1917,"value":8114},{"x":1918,"value":68},{"x":1919,"value":1000},{"x":1920,"value":448},{"x":1922,"value":200000},{"x":1923,"value":6278},{"x":1924,"value":4484},{"x":1925,"value":1638},{"x":1926,"value":7136},{"x":1927,"value":11544},{"x":1928,"value":8448},{"x":1929,"value":0},{"x":1930,"value":8164},{"x":1931,"value":6400},{"x":1932,"value":6488},{"x":1933,"value":126},{"x":1934,"value":10182},{"x":1935,"value":125414},{"x":1936,"value":6618},{"x":1937,"value":22462},{"x":1938,"value":1810},{"x":1939,"value":6},{"x":1940,"value":246},{"x":1941,"value":10292},{"x":1942,"value":202000},{"x":1943,"value":10000},{"x":1944,"value":1452},{"x":1945,"value":8830},{"x":1946,"value":674},{"x":1947,"value":9476},{"x":1948,"value":5942},{"x":1949,"value":5608},{"x":1950,"value":1746},{"x":1951,"value":5722},{"x":1952,"value":4554},{"x":1953,"value":3628},{"x":1954,"value":5938},{"x":1955,"value":7790},{"x":1956,"value":6228},{"x":1957,"value":2278},{"x":1958,"value":5240},{"x":1959,"value":19390},{"x":1960,"value":18328},{"x":1961,"value":25704},{"x":1962,"value":3026},{"x":1963,"value":59930},{"x":1964,"value":21310},{"x":1965,"value":119864},{"x":1966,"value":4654},{"x":1967,"value":4510},{"x":1968,"value":3334},{"x":1969,"value":6504},{"x":1970,"value":608990},{"x":1971,"value":21622},{"x":1972,"value":2746},{"x":1973,"value":8688},{"x":1974,"value":23722},{"x":1975,"value":2082},{"x":1976,"value":3362},{"x":1977,"value":30596},{"x":1978,"value":7352},{"x":1979,"value":5246},{"x":1980,"value":2758},{"x":1981,"value":7580},{"x":1982,"value":5564},{"x":1983,"value":7312},{"x":1984,"value":9730},{"x":1985,"value":34330},{"x":1986,"value":3878},{"x":1987,"value":5800},{"x":1988,"value":6670},{"x":1989,"value":8512},{"x":1990,"value":9208},{"x":1991,"value":292594},{"x":1992,"value":2688},{"x":1993,"value":5930},{"x":1994,"value":8478},{"x":1995,"value":7526},{"x":1996,"value":9162},{"x":1997,"value":12300},{"x":1998,"value":49870},{"x":1999,"value":24540},{"x":2000,"value":2708},{"x":2001,"value":3822},{"x":2002,"value":2764},{"x":2003,"value":2098},{"x":2004,"value":13094},{"x":2005,"value":10502},{"x":2006,"value":8658},{"x":2007,"value":12070},{"x":2008,"value":281970},{"x":2009,"value":6574},{"x":2010,"value":3128},{"x":2011,"value":6206},{"x":2012,"value":6210},{"x":2013,"value":17196},{"x":2014,"value":2864},{"x":2015,"value":2576},{"x":2016,"value":3522},{"x":2017,"value":5120},{"x":2018,"value":3414},{"x":2019,"value":5028},{"x":2020,"value":3446}]},{"id":10,"name":"Deaths from earthquakes","legend":"earthquakes","categories":["disasters"],"subCategory":"geophysical","summary":"Deaths from earthquakes","citations":"<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n","xUnit":"year","start":1900,"end":2020,"min":24,"max":554010,"points":[{"x":1900,"value":280},{"x":1901,"value":36},{"x":1902,"value":18296},{"x":1903,"value":13260},{"x":1904,"value":304},{"x":1905,"value":41458},{"x":1906,"value":45306},{"x":1907,"value":26400},{"x":1908,"value":150000},{"x":1909,"value":10956},{"x":1910,"value":5044},{"x":1911,"value":2594},{"x":1912,"value":1846},{"x":1913,"value":2460},{"x":1914,"value":8564},{"x":1915,"value":60312},{"x":1916,"value":362},{"x":1917,"value":39008},{"x":1918,"value":20432},{"x":1920,"value":365296},{"x":1922,"value":2064},{"x":1923,"value":301894},{"x":1924,"value":2074},{"x":1925,"value":12306},{"x":1926,"value":24},{"x":1927,"value":88504},{"x":1928,"value":1270},{"x":1929,"value":6540},{"x":1930,"value":11174},{"x":1931,"value":28572},{"x":1932,"value":3254},{"x":1933,"value":26652},{"x":1934,"value":240},{"x":1935,"value":134824},{"x":1936,"value":1222},{"x":1937,"value":850},{"x":1938,"value":298},{"x":1939,"value":126242},{"x":1940,"value":2804},{"x":1941,"value":3312},{"x":1942,"value":6852},{"x":1943,"value":13968},{"x":1944,"value":30500},{"x":1945,"value":13886},{"x":1946,"value":10452},{"x":1947,"value":1272},{"x":1948,"value":232630},{"x":1949,"value":19780},{"x":1950,"value":3900},{"x":1951,"value":9478},{"x":1952,"value":706},{"x":1953,"value":5516},{"x":1954,"value":6638},{"x":1955,"value":978},{"x":1956,"value":1526},{"x":1957,"value":13940},{"x":1958,"value":676},{"x":1959,"value":138},{"x":1960,"value":37662},{"x":1961,"value":200},{"x":1962,"value":24156},{"x":1963,"value":2770},{"x":1964,"value":670},{"x":1965,"value":1390},{"x":1966,"value":5578},{"x":1967,"value":1910},{"x":1968,"value":23142},{"x":1969,"value":6760},{"x":1970,"value":156362},{"x":1971,"value":2216},{"x":1972,"value":30366},{"x":1973,"value":1182},{"x":1974,"value":49658},{"x":1975,"value":9264},{"x":1976,"value":554010},{"x":1977,"value":6232},{"x":1978,"value":50324},{"x":1979,"value":4148},{"x":1980,"value":15278},{"x":1981,"value":7958},{"x":1982,"value":1352},{"x":1983,"value":4296},{"x":1984,"value":114},{"x":1985,"value":19704},{"x":1986,"value":2362},{"x":1987,"value":10302},{"x":1988,"value":54078},{"x":1989,"value":1300},{"x":1990,"value":85690},{"x":1991,"value":4908},{"x":1992,"value":8066},{"x":1993,"value":20176},{"x":1994,"value":2484},{"x":1995,"value":15478},{"x":1996,"value":1152},{"x":1997,"value":6118},{"x":1998,"value":19146},{"x":1999,"value":43738},{"x":2000,"value":434},{"x":2001,"value":42696},{"x":2002,"value":3278},{"x":2003,"value":59234},{"x":2004,"value":454580},{"x":2005,"value":152482},{"x":2006,"value":13384},{"x":2007,"value":1560},{"x":2008,"value":175836},{"x":2009,"value":3786},{"x":2010,"value":453466},{"x":2011,"value":41892},{"x":2012,"value":1422},{"x":2013,"value":2240},{"x":2014,"value":1548},{"x":2015,"value":19100},{"x":2016,"value":2622},{"x":2017,"value":2024},{"x":2018,"value":10122},{"x":2019,"value":524},{"x":2020,"value":392}]}],"start":1900,"end":2020}
+{
+    "xUnit": "year",
+    "min": 24,
+    "max": 7400000,
+    "slug": "deaths-from-natural-disasters",
+    "name": "Deaths from natural disasters",
+    "categories": [
+        "disasters"
+    ],
+    "events": [],
+    "series": [
+        {
+            "id": 1,
+            "name": "Deaths from landslides",
+            "legend": "landslides",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from landslides",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1909",
+            "end": "2020",
+            "min": 36,
+            "max": 24000,
+            "points": [
+                {
+                    "x": "1909",
+                    "y": 106
+                },
+                {
+                    "x": "1910",
+                    "y": 124
+                },
+                {
+                    "x": "1915",
+                    "y": 112
+                },
+                {
+                    "x": "1922",
+                    "y": 200
+                },
+                {
+                    "x": "1923",
+                    "y": 400
+                },
+                {
+                    "x": "1926",
+                    "y": 256
+                },
+                {
+                    "x": "1930",
+                    "y": 80
+                },
+                {
+                    "x": "1931",
+                    "y": 380
+                },
+                {
+                    "x": "1932",
+                    "y": 60
+                },
+                {
+                    "x": "1934",
+                    "y": 1000
+                },
+                {
+                    "x": "1936",
+                    "y": 146
+                },
+                {
+                    "x": "1938",
+                    "y": 400
+                },
+                {
+                    "x": "1941",
+                    "y": 10000
+                },
+                {
+                    "x": "1948",
+                    "y": 1050
+                },
+                {
+                    "x": "1949",
+                    "y": 24000
+                },
+                {
+                    "x": "1950",
+                    "y": 260
+                },
+                {
+                    "x": "1951",
+                    "y": 184
+                },
+                {
+                    "x": "1952",
+                    "y": 56
+                },
+                {
+                    "x": "1954",
+                    "y": 2172
+                },
+                {
+                    "x": "1955",
+                    "y": 956
+                },
+                {
+                    "x": "1956",
+                    "y": 472
+                },
+                {
+                    "x": "1958",
+                    "y": 104
+                },
+                {
+                    "x": "1959",
+                    "y": 96
+                },
+                {
+                    "x": "1960",
+                    "y": 104
+                },
+                {
+                    "x": "1961",
+                    "y": 332
+                },
+                {
+                    "x": "1962",
+                    "y": 142
+                },
+                {
+                    "x": "1963",
+                    "y": 4066
+                },
+                {
+                    "x": "1964",
+                    "y": 216
+                },
+                {
+                    "x": "1965",
+                    "y": 460
+                },
+                {
+                    "x": "1966",
+                    "y": 1208
+                },
+                {
+                    "x": "1967",
+                    "y": 1180
+                },
+                {
+                    "x": "1968",
+                    "y": 2392
+                },
+                {
+                    "x": "1969",
+                    "y": 36
+                },
+                {
+                    "x": "1970",
+                    "y": 456
+                },
+                {
+                    "x": "1971",
+                    "y": 2040
+                },
+                {
+                    "x": "1972",
+                    "y": 1510
+                },
+                {
+                    "x": "1973",
+                    "y": 7082
+                },
+                {
+                    "x": "1974",
+                    "y": 1808
+                },
+                {
+                    "x": "1975",
+                    "y": 390
+                },
+                {
+                    "x": "1976",
+                    "y": 630
+                },
+                {
+                    "x": "1977",
+                    "y": 80
+                },
+                {
+                    "x": "1978",
+                    "y": 172
+                },
+                {
+                    "x": "1979",
+                    "y": 676
+                },
+                {
+                    "x": "1980",
+                    "y": 600
+                },
+                {
+                    "x": "1981",
+                    "y": 842
+                },
+                {
+                    "x": "1982",
+                    "y": 1306
+                },
+                {
+                    "x": "1983",
+                    "y": 2336
+                },
+                {
+                    "x": "1984",
+                    "y": 456
+                },
+                {
+                    "x": "1985",
+                    "y": 754
+                },
+                {
+                    "x": "1986",
+                    "y": 1002
+                },
+                {
+                    "x": "1987",
+                    "y": 2408
+                },
+                {
+                    "x": "1988",
+                    "y": 1904
+                },
+                {
+                    "x": "1989",
+                    "y": 890
+                },
+                {
+                    "x": "1990",
+                    "y": 282
+                },
+                {
+                    "x": "1991",
+                    "y": 1456
+                },
+                {
+                    "x": "1992",
+                    "y": 1424
+                },
+                {
+                    "x": "1993",
+                    "y": 3156
+                },
+                {
+                    "x": "1994",
+                    "y": 614
+                },
+                {
+                    "x": "1995",
+                    "y": 3042
+                },
+                {
+                    "x": "1996",
+                    "y": 2310
+                },
+                {
+                    "x": "1997",
+                    "y": 1602
+                },
+                {
+                    "x": "1998",
+                    "y": 2282
+                },
+                {
+                    "x": "1999",
+                    "y": 890
+                },
+                {
+                    "x": "2000",
+                    "y": 2024
+                },
+                {
+                    "x": "2001",
+                    "y": 1572
+                },
+                {
+                    "x": "2002",
+                    "y": 2200
+                },
+                {
+                    "x": "2003",
+                    "y": 1412
+                },
+                {
+                    "x": "2004",
+                    "y": 626
+                },
+                {
+                    "x": "2005",
+                    "y": 1328
+                },
+                {
+                    "x": "2006",
+                    "y": 3276
+                },
+                {
+                    "x": "2007",
+                    "y": 542
+                },
+                {
+                    "x": "2008",
+                    "y": 1008
+                },
+                {
+                    "x": "2009",
+                    "y": 1446
+                },
+                {
+                    "x": "2010",
+                    "y": 6854
+                },
+                {
+                    "x": "2011",
+                    "y": 618
+                },
+                {
+                    "x": "2012",
+                    "y": 1002
+                },
+                {
+                    "x": "2013",
+                    "y": 470
+                },
+                {
+                    "x": "2014",
+                    "y": 1920
+                },
+                {
+                    "x": "2015",
+                    "y": 2012
+                },
+                {
+                    "x": "2016",
+                    "y": 714
+                },
+                {
+                    "x": "2017",
+                    "y": 4624
+                },
+                {
+                    "x": "2018",
+                    "y": 550
+                },
+                {
+                    "x": "2019",
+                    "y": 1454
+                },
+                {
+                    "x": "2020",
+                    "y": 1028
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Deaths from fog",
+            "legend": "fog",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "meteorological",
+            "summary": "Deaths from fog",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1909",
+            "end": "1952",
+            "min": 106,
+            "max": 8000,
+            "points": [
+                {
+                    "x": "1909",
+                    "y": 106
+                },
+                {
+                    "x": "1910",
+                    "y": 124
+                },
+                {
+                    "x": "1952",
+                    "y": 8000
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Deaths from wildfires",
+            "legend": "wildfires",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from wildfires",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1911",
+            "end": "2020",
+            "min": 0,
+            "max": 2000,
+            "points": [
+                {
+                    "x": "1911",
+                    "y": 146
+                },
+                {
+                    "x": "1918",
+                    "y": 2000
+                },
+                {
+                    "x": "1922",
+                    "y": 86
+                },
+                {
+                    "x": "1929",
+                    "y": 120
+                },
+                {
+                    "x": "1939",
+                    "y": 142
+                },
+                {
+                    "x": "1944",
+                    "y": 340
+                },
+                {
+                    "x": "1947",
+                    "y": 0
+                },
+                {
+                    "x": "1949",
+                    "y": 160
+                },
+                {
+                    "x": "1956",
+                    "y": 22
+                },
+                {
+                    "x": "1965",
+                    "y": 0
+                },
+                {
+                    "x": "1966",
+                    "y": 50
+                },
+                {
+                    "x": "1967",
+                    "y": 124
+                },
+                {
+                    "x": "1968",
+                    "y": 24
+                },
+                {
+                    "x": "1969",
+                    "y": 0
+                },
+                {
+                    "x": "1970",
+                    "y": 0
+                },
+                {
+                    "x": "1971",
+                    "y": 0
+                },
+                {
+                    "x": "1972",
+                    "y": 0
+                },
+                {
+                    "x": "1973",
+                    "y": 0
+                },
+                {
+                    "x": "1974",
+                    "y": 0
+                },
+                {
+                    "x": "1975",
+                    "y": 0
+                },
+                {
+                    "x": "1976",
+                    "y": 0
+                },
+                {
+                    "x": "1977",
+                    "y": 6
+                },
+                {
+                    "x": "1978",
+                    "y": 4
+                },
+                {
+                    "x": "1979",
+                    "y": 0
+                },
+                {
+                    "x": "1980",
+                    "y": 0
+                },
+                {
+                    "x": "1981",
+                    "y": 16
+                },
+                {
+                    "x": "1982",
+                    "y": 4
+                },
+                {
+                    "x": "1983",
+                    "y": 212
+                },
+                {
+                    "x": "1984",
+                    "y": 34
+                },
+                {
+                    "x": "1985",
+                    "y": 102
+                },
+                {
+                    "x": "1986",
+                    "y": 40
+                },
+                {
+                    "x": "1987",
+                    "y": 382
+                },
+                {
+                    "x": "1989",
+                    "y": 2
+                },
+                {
+                    "x": "1990",
+                    "y": 0
+                },
+                {
+                    "x": "1991",
+                    "y": 180
+                },
+                {
+                    "x": "1992",
+                    "y": 244
+                },
+                {
+                    "x": "1993",
+                    "y": 6
+                },
+                {
+                    "x": "1994",
+                    "y": 168
+                },
+                {
+                    "x": "1995",
+                    "y": 58
+                },
+                {
+                    "x": "1996",
+                    "y": 90
+                },
+                {
+                    "x": "1997",
+                    "y": 532
+                },
+                {
+                    "x": "1998",
+                    "y": 300
+                },
+                {
+                    "x": "1999",
+                    "y": 140
+                },
+                {
+                    "x": "2000",
+                    "y": 94
+                },
+                {
+                    "x": "2001",
+                    "y": 66
+                },
+                {
+                    "x": "2002",
+                    "y": 12
+                },
+                {
+                    "x": "2003",
+                    "y": 94
+                },
+                {
+                    "x": "2004",
+                    "y": 28
+                },
+                {
+                    "x": "2005",
+                    "y": 90
+                },
+                {
+                    "x": "2006",
+                    "y": 26
+                },
+                {
+                    "x": "2007",
+                    "y": 296
+                },
+                {
+                    "x": "2008",
+                    "y": 172
+                },
+                {
+                    "x": "2009",
+                    "y": 380
+                },
+                {
+                    "x": "2010",
+                    "y": 332
+                },
+                {
+                    "x": "2011",
+                    "y": 20
+                },
+                {
+                    "x": "2012",
+                    "y": 42
+                },
+                {
+                    "x": "2013",
+                    "y": 70
+                },
+                {
+                    "x": "2014",
+                    "y": 32
+                },
+                {
+                    "x": "2015",
+                    "y": 156
+                },
+                {
+                    "x": "2016",
+                    "y": 80
+                },
+                {
+                    "x": "2017",
+                    "y": 356
+                },
+                {
+                    "x": "2018",
+                    "y": 442
+                },
+                {
+                    "x": "2019",
+                    "y": 232
+                },
+                {
+                    "x": "2020",
+                    "y": 140
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Deaths from extreme temperatures",
+            "legend": "extreme temperatures",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from extreme temperatures",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1936",
+            "end": "2020",
+            "min": 0,
+            "max": 149396,
+            "points": [
+                {
+                    "x": "1936",
+                    "y": 3386
+                },
+                {
+                    "x": "1951",
+                    "y": 138
+                },
+                {
+                    "x": "1953",
+                    "y": 1338
+                },
+                {
+                    "x": "1955",
+                    "y": 214
+                },
+                {
+                    "x": "1958",
+                    "y": 1302
+                },
+                {
+                    "x": "1961",
+                    "y": 800
+                },
+                {
+                    "x": "1962",
+                    "y": 100
+                },
+                {
+                    "x": "1963",
+                    "y": 324
+                },
+                {
+                    "x": "1965",
+                    "y": 200
+                },
+                {
+                    "x": "1966",
+                    "y": 524
+                },
+                {
+                    "x": "1968",
+                    "y": 306
+                },
+                {
+                    "x": "1971",
+                    "y": 800
+                },
+                {
+                    "x": "1972",
+                    "y": 220
+                },
+                {
+                    "x": "1973",
+                    "y": 566
+                },
+                {
+                    "x": "1975",
+                    "y": 280
+                },
+                {
+                    "x": "1977",
+                    "y": 0
+                },
+                {
+                    "x": "1978",
+                    "y": 300
+                },
+                {
+                    "x": "1979",
+                    "y": 940
+                },
+                {
+                    "x": "1980",
+                    "y": 2778
+                },
+                {
+                    "x": "1981",
+                    "y": 600
+                },
+                {
+                    "x": "1982",
+                    "y": 800
+                },
+                {
+                    "x": "1983",
+                    "y": 410
+                },
+                {
+                    "x": "1984",
+                    "y": 580
+                },
+                {
+                    "x": "1985",
+                    "y": 912
+                },
+                {
+                    "x": "1986",
+                    "y": 100
+                },
+                {
+                    "x": "1987",
+                    "y": 2440
+                },
+                {
+                    "x": "1988",
+                    "y": 1288
+                },
+                {
+                    "x": "1989",
+                    "y": 762
+                },
+                {
+                    "x": "1990",
+                    "y": 1958
+                },
+                {
+                    "x": "1991",
+                    "y": 1670
+                },
+                {
+                    "x": "1992",
+                    "y": 776
+                },
+                {
+                    "x": "1993",
+                    "y": 212
+                },
+                {
+                    "x": "1994",
+                    "y": 682
+                },
+                {
+                    "x": "1995",
+                    "y": 3460
+                },
+                {
+                    "x": "1996",
+                    "y": 600
+                },
+                {
+                    "x": "1997",
+                    "y": 1208
+                },
+                {
+                    "x": "1998",
+                    "y": 6538
+                },
+                {
+                    "x": "1999",
+                    "y": 1542
+                },
+                {
+                    "x": "2000",
+                    "y": 1868
+                },
+                {
+                    "x": "2001",
+                    "y": 3574
+                },
+                {
+                    "x": "2002",
+                    "y": 6738
+                },
+                {
+                    "x": "2003",
+                    "y": 149396
+                },
+                {
+                    "x": "2004",
+                    "y": 510
+                },
+                {
+                    "x": "2005",
+                    "y": 5254
+                },
+                {
+                    "x": "2006",
+                    "y": 7498
+                },
+                {
+                    "x": "2007",
+                    "y": 2172
+                },
+                {
+                    "x": "2008",
+                    "y": 3480
+                },
+                {
+                    "x": "2009",
+                    "y": 2868
+                },
+                {
+                    "x": "2010",
+                    "y": 114176
+                },
+                {
+                    "x": "2011",
+                    "y": 870
+                },
+                {
+                    "x": "2012",
+                    "y": 3766
+                },
+                {
+                    "x": "2013",
+                    "y": 3544
+                },
+                {
+                    "x": "2014",
+                    "y": 2336
+                },
+                {
+                    "x": "2015",
+                    "y": 14850
+                },
+                {
+                    "x": "2016",
+                    "y": 980
+                },
+                {
+                    "x": "2017",
+                    "y": 718
+                },
+                {
+                    "x": "2018",
+                    "y": 1430
+                },
+                {
+                    "x": "2019",
+                    "y": 5818
+                },
+                {
+                    "x": "2020",
+                    "y": 12686
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Deaths from floods",
+            "legend": "floods",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from floods",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1900",
+            "end": "2020",
+            "min": 0,
+            "max": 7400000,
+            "points": [
+                {
+                    "x": "1900",
+                    "y": 600
+                },
+                {
+                    "x": "1903",
+                    "y": 500
+                },
+                {
+                    "x": "1906",
+                    "y": 12
+                },
+                {
+                    "x": "1909",
+                    "y": 144
+                },
+                {
+                    "x": "1910",
+                    "y": 2758
+                },
+                {
+                    "x": "1911",
+                    "y": 200000
+                },
+                {
+                    "x": "1915",
+                    "y": 0
+                },
+                {
+                    "x": "1917",
+                    "y": 0
+                },
+                {
+                    "x": "1926",
+                    "y": 2000
+                },
+                {
+                    "x": "1927",
+                    "y": 6492
+                },
+                {
+                    "x": "1928",
+                    "y": 72
+                },
+                {
+                    "x": "1930",
+                    "y": 0
+                },
+                {
+                    "x": "1931",
+                    "y": 7400000
+                },
+                {
+                    "x": "1933",
+                    "y": 36106
+                },
+                {
+                    "x": "1935",
+                    "y": 284000
+                },
+                {
+                    "x": "1936",
+                    "y": 400
+                },
+                {
+                    "x": "1937",
+                    "y": 496
+                },
+                {
+                    "x": "1938",
+                    "y": 1908
+                },
+                {
+                    "x": "1939",
+                    "y": 1000020
+                },
+                {
+                    "x": "1940",
+                    "y": 250
+                },
+                {
+                    "x": "1943",
+                    "y": 1980
+                },
+                {
+                    "x": "1947",
+                    "y": 4000
+                },
+                {
+                    "x": "1948",
+                    "y": 1834
+                },
+                {
+                    "x": "1949",
+                    "y": 194000
+                },
+                {
+                    "x": "1950",
+                    "y": 7616
+                },
+                {
+                    "x": "1951",
+                    "y": 11332
+                },
+                {
+                    "x": "1952",
+                    "y": 398
+                },
+                {
+                    "x": "1953",
+                    "y": 14250
+                },
+                {
+                    "x": "1954",
+                    "y": 68872
+                },
+                {
+                    "x": "1955",
+                    "y": 1168
+                },
+                {
+                    "x": "1956",
+                    "y": 7226
+                },
+                {
+                    "x": "1957",
+                    "y": 4942
+                },
+                {
+                    "x": "1958",
+                    "y": 800
+                },
+                {
+                    "x": "1959",
+                    "y": 4006792
+                },
+                {
+                    "x": "1960",
+                    "y": 21154
+                },
+                {
+                    "x": "1961",
+                    "y": 7726
+                },
+                {
+                    "x": "1962",
+                    "y": 2360
+                },
+                {
+                    "x": "1963",
+                    "y": 2062
+                },
+                {
+                    "x": "1964",
+                    "y": 2246
+                },
+                {
+                    "x": "1965",
+                    "y": 2802
+                },
+                {
+                    "x": "1966",
+                    "y": 3846
+                },
+                {
+                    "x": "1967",
+                    "y": 4892
+                },
+                {
+                    "x": "1968",
+                    "y": 14612
+                },
+                {
+                    "x": "1969",
+                    "y": 3088
+                },
+                {
+                    "x": "1970",
+                    "y": 6492
+                },
+                {
+                    "x": "1971",
+                    "y": 4808
+                },
+                {
+                    "x": "1972",
+                    "y": 5096
+                },
+                {
+                    "x": "1973",
+                    "y": 3550
+                },
+                {
+                    "x": "1974",
+                    "y": 58862
+                },
+                {
+                    "x": "1975",
+                    "y": 41592
+                },
+                {
+                    "x": "1976",
+                    "y": 1920
+                },
+                {
+                    "x": "1977",
+                    "y": 5136
+                },
+                {
+                    "x": "1978",
+                    "y": 11790
+                },
+                {
+                    "x": "1979",
+                    "y": 2076
+                },
+                {
+                    "x": "1980",
+                    "y": 20932
+                },
+                {
+                    "x": "1981",
+                    "y": 10566
+                },
+                {
+                    "x": "1982",
+                    "y": 8332
+                },
+                {
+                    "x": "1983",
+                    "y": 4164
+                },
+                {
+                    "x": "1984",
+                    "y": 5860
+                },
+                {
+                    "x": "1985",
+                    "y": 8752
+                },
+                {
+                    "x": "1986",
+                    "y": 3564
+                },
+                {
+                    "x": "1987",
+                    "y": 13532
+                },
+                {
+                    "x": "1988",
+                    "y": 16996
+                },
+                {
+                    "x": "1989",
+                    "y": 9306
+                },
+                {
+                    "x": "1990",
+                    "y": 4502
+                },
+                {
+                    "x": "1991",
+                    "y": 11694
+                },
+                {
+                    "x": "1992",
+                    "y": 10630
+                },
+                {
+                    "x": "1993",
+                    "y": 12300
+                },
+                {
+                    "x": "1994",
+                    "y": 13542
+                },
+                {
+                    "x": "1995",
+                    "y": 15912
+                },
+                {
+                    "x": "1996",
+                    "y": 16094
+                },
+                {
+                    "x": "1997",
+                    "y": 15370
+                },
+                {
+                    "x": "1998",
+                    "y": 21306
+                },
+                {
+                    "x": "1999",
+                    "y": 69614
+                },
+                {
+                    "x": "2000",
+                    "y": 12050
+                },
+                {
+                    "x": "2001",
+                    "y": 10028
+                },
+                {
+                    "x": "2002",
+                    "y": 8354
+                },
+                {
+                    "x": "2003",
+                    "y": 7820
+                },
+                {
+                    "x": "2004",
+                    "y": 13964
+                },
+                {
+                    "x": "2005",
+                    "y": 11508
+                },
+                {
+                    "x": "2006",
+                    "y": 11686
+                },
+                {
+                    "x": "2007",
+                    "y": 17214
+                },
+                {
+                    "x": "2008",
+                    "y": 8014
+                },
+                {
+                    "x": "2009",
+                    "y": 7254
+                },
+                {
+                    "x": "2010",
+                    "y": 16712
+                },
+                {
+                    "x": "2011",
+                    "y": 12326
+                },
+                {
+                    "x": "2012",
+                    "y": 7088
+                },
+                {
+                    "x": "2013",
+                    "y": 19638
+                },
+                {
+                    "x": "2014",
+                    "y": 7072
+                },
+                {
+                    "x": "2015",
+                    "y": 6958
+                },
+                {
+                    "x": "2016",
+                    "y": 8794
+                },
+                {
+                    "x": "2017",
+                    "y": 6674
+                },
+                {
+                    "x": "2018",
+                    "y": 5762
+                },
+                {
+                    "x": "2019",
+                    "y": 10322
+                },
+                {
+                    "x": "2020",
+                    "y": 12358
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Deaths from volcanic activity",
+            "legend": "volcanic activity",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "geophysical",
+            "summary": "Deaths from volcanic activity",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1900",
+            "end": "2020",
+            "min": 0,
+            "max": 77380,
+            "points": [
+                {
+                    "x": "1900",
+                    "y": 60
+                },
+                {
+                    "x": "1902",
+                    "y": 77380
+                },
+                {
+                    "x": "1903",
+                    "y": 34
+                },
+                {
+                    "x": "1906",
+                    "y": 1400
+                },
+                {
+                    "x": "1911",
+                    "y": 2670
+                },
+                {
+                    "x": "1914",
+                    "y": 280
+                },
+                {
+                    "x": "1919",
+                    "y": 10000
+                },
+                {
+                    "x": "1926",
+                    "y": 288
+                },
+                {
+                    "x": "1930",
+                    "y": 2738
+                },
+                {
+                    "x": "1931",
+                    "y": 2600
+                },
+                {
+                    "x": "1937",
+                    "y": 1012
+                },
+                {
+                    "x": "1943",
+                    "y": 0
+                },
+                {
+                    "x": "1944",
+                    "y": 52
+                },
+                {
+                    "x": "1945",
+                    "y": 0
+                },
+                {
+                    "x": "1946",
+                    "y": 0
+                },
+                {
+                    "x": "1948",
+                    "y": 200
+                },
+                {
+                    "x": "1949",
+                    "y": 4000
+                },
+                {
+                    "x": "1950",
+                    "y": 168
+                },
+                {
+                    "x": "1951",
+                    "y": 9600
+                },
+                {
+                    "x": "1952",
+                    "y": 58
+                },
+                {
+                    "x": "1953",
+                    "y": 300
+                },
+                {
+                    "x": "1954",
+                    "y": 74
+                },
+                {
+                    "x": "1956",
+                    "y": 0
+                },
+                {
+                    "x": "1957",
+                    "y": 0
+                },
+                {
+                    "x": "1960",
+                    "y": 0
+                },
+                {
+                    "x": "1963",
+                    "y": 3410
+                },
+                {
+                    "x": "1964",
+                    "y": 8
+                },
+                {
+                    "x": "1965",
+                    "y": 710
+                },
+                {
+                    "x": "1966",
+                    "y": 2176
+                },
+                {
+                    "x": "1968",
+                    "y": 180
+                },
+                {
+                    "x": "1969",
+                    "y": 0
+                },
+                {
+                    "x": "1971",
+                    "y": 0
+                },
+                {
+                    "x": "1973",
+                    "y": 0
+                },
+                {
+                    "x": "1975",
+                    "y": 4
+                },
+                {
+                    "x": "1976",
+                    "y": 82
+                },
+                {
+                    "x": "1977",
+                    "y": 430
+                },
+                {
+                    "x": "1978",
+                    "y": 0
+                },
+                {
+                    "x": "1979",
+                    "y": 536
+                },
+                {
+                    "x": "1980",
+                    "y": 180
+                },
+                {
+                    "x": "1981",
+                    "y": 384
+                },
+                {
+                    "x": "1982",
+                    "y": 260
+                },
+                {
+                    "x": "1983",
+                    "y": 0
+                },
+                {
+                    "x": "1984",
+                    "y": 74
+                },
+                {
+                    "x": "1985",
+                    "y": 43600
+                },
+                {
+                    "x": "1986",
+                    "y": 3492
+                },
+                {
+                    "x": "1987",
+                    "y": 0
+                },
+                {
+                    "x": "1988",
+                    "y": 14
+                },
+                {
+                    "x": "1989",
+                    "y": 0
+                },
+                {
+                    "x": "1990",
+                    "y": 66
+                },
+                {
+                    "x": "1991",
+                    "y": 1366
+                },
+                {
+                    "x": "1992",
+                    "y": 2
+                },
+                {
+                    "x": "1993",
+                    "y": 198
+                },
+                {
+                    "x": "1994",
+                    "y": 202
+                },
+                {
+                    "x": "1995",
+                    "y": 0
+                },
+                {
+                    "x": "1996",
+                    "y": 8
+                },
+                {
+                    "x": "1997",
+                    "y": 106
+                },
+                {
+                    "x": "1998",
+                    "y": 0
+                },
+                {
+                    "x": "1999",
+                    "y": 0
+                },
+                {
+                    "x": "2000",
+                    "y": 0
+                },
+                {
+                    "x": "2001",
+                    "y": 0
+                },
+                {
+                    "x": "2002",
+                    "y": 400
+                },
+                {
+                    "x": "2003",
+                    "y": 0
+                },
+                {
+                    "x": "2004",
+                    "y": 4
+                },
+                {
+                    "x": "2005",
+                    "y": 6
+                },
+                {
+                    "x": "2006",
+                    "y": 10
+                },
+                {
+                    "x": "2007",
+                    "y": 22
+                },
+                {
+                    "x": "2008",
+                    "y": 32
+                },
+                {
+                    "x": "2009",
+                    "y": 0
+                },
+                {
+                    "x": "2010",
+                    "y": 646
+                },
+                {
+                    "x": "2011",
+                    "y": 6
+                },
+                {
+                    "x": "2012",
+                    "y": 0
+                },
+                {
+                    "x": "2013",
+                    "y": 0
+                },
+                {
+                    "x": "2014",
+                    "y": 204
+                },
+                {
+                    "x": "2015",
+                    "y": 0
+                },
+                {
+                    "x": "2017",
+                    "y": 0
+                },
+                {
+                    "x": "2018",
+                    "y": 1828
+                },
+                {
+                    "x": "2019",
+                    "y": 42
+                },
+                {
+                    "x": "2020",
+                    "y": 2
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Deaths from drought",
+            "legend": "drought",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from drought",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1900",
+            "end": "2020",
+            "min": 0,
+            "max": 6000000,
+            "points": [
+                {
+                    "x": "1900",
+                    "y": 2522000
+                },
+                {
+                    "x": "1903",
+                    "y": 0
+                },
+                {
+                    "x": "1906",
+                    "y": 0
+                },
+                {
+                    "x": "1910",
+                    "y": 170000
+                },
+                {
+                    "x": "1919",
+                    "y": 0
+                },
+                {
+                    "x": "1920",
+                    "y": 1048000
+                },
+                {
+                    "x": "1921",
+                    "y": 2400000
+                },
+                {
+                    "x": "1928",
+                    "y": 6000000
+                },
+                {
+                    "x": "1931",
+                    "y": 0
+                },
+                {
+                    "x": "1933",
+                    "y": 0
+                },
+                {
+                    "x": "1940",
+                    "y": 40000
+                },
+                {
+                    "x": "1942",
+                    "y": 3000000
+                },
+                {
+                    "x": "1943",
+                    "y": 3800000
+                },
+                {
+                    "x": "1946",
+                    "y": 60000
+                },
+                {
+                    "x": "1947",
+                    "y": 0
+                },
+                {
+                    "x": "1960",
+                    "y": 0
+                },
+                {
+                    "x": "1961",
+                    "y": 0
+                },
+                {
+                    "x": "1963",
+                    "y": 0
+                },
+                {
+                    "x": "1964",
+                    "y": 100
+                },
+                {
+                    "x": "1965",
+                    "y": 3004000
+                },
+                {
+                    "x": "1966",
+                    "y": 16000
+                },
+                {
+                    "x": "1967",
+                    "y": 1200
+                },
+                {
+                    "x": "1968",
+                    "y": 0
+                },
+                {
+                    "x": "1969",
+                    "y": 0
+                },
+                {
+                    "x": "1970",
+                    "y": 0
+                },
+                {
+                    "x": "1971",
+                    "y": 0
+                },
+                {
+                    "x": "1972",
+                    "y": 0
+                },
+                {
+                    "x": "1973",
+                    "y": 238000
+                },
+                {
+                    "x": "1974",
+                    "y": 0
+                },
+                {
+                    "x": "1976",
+                    "y": 0
+                },
+                {
+                    "x": "1977",
+                    "y": 0
+                },
+                {
+                    "x": "1978",
+                    "y": 126
+                },
+                {
+                    "x": "1979",
+                    "y": 36
+                },
+                {
+                    "x": "1980",
+                    "y": 6000
+                },
+                {
+                    "x": "1981",
+                    "y": 201000
+                },
+                {
+                    "x": "1982",
+                    "y": 560
+                },
+                {
+                    "x": "1983",
+                    "y": 900040
+                },
+                {
+                    "x": "1984",
+                    "y": 460
+                },
+                {
+                    "x": "1985",
+                    "y": 0
+                },
+                {
+                    "x": "1986",
+                    "y": 168
+                },
+                {
+                    "x": "1987",
+                    "y": 2634
+                },
+                {
+                    "x": "1988",
+                    "y": 3200
+                },
+                {
+                    "x": "1989",
+                    "y": 474
+                },
+                {
+                    "x": "1990",
+                    "y": 0
+                },
+                {
+                    "x": "1991",
+                    "y": 4000
+                },
+                {
+                    "x": "1992",
+                    "y": 0
+                },
+                {
+                    "x": "1993",
+                    "y": 0
+                },
+                {
+                    "x": "1994",
+                    "y": 0
+                },
+                {
+                    "x": "1995",
+                    "y": 0
+                },
+                {
+                    "x": "1996",
+                    "y": 0
+                },
+                {
+                    "x": "1997",
+                    "y": 1464
+                },
+                {
+                    "x": "1998",
+                    "y": 40
+                },
+                {
+                    "x": "1999",
+                    "y": 764
+                },
+                {
+                    "x": "2000",
+                    "y": 118
+                },
+                {
+                    "x": "2001",
+                    "y": 216
+                },
+                {
+                    "x": "2002",
+                    "y": 1158
+                },
+                {
+                    "x": "2003",
+                    "y": 18
+                },
+                {
+                    "x": "2004",
+                    "y": 160
+                },
+                {
+                    "x": "2005",
+                    "y": 298
+                },
+                {
+                    "x": "2006",
+                    "y": 268
+                },
+                {
+                    "x": "2007",
+                    "y": 0
+                },
+                {
+                    "x": "2008",
+                    "y": 16
+                },
+                {
+                    "x": "2009",
+                    "y": 0
+                },
+                {
+                    "x": "2010",
+                    "y": 40000
+                },
+                {
+                    "x": "2011",
+                    "y": 0
+                },
+                {
+                    "x": "2012",
+                    "y": 0
+                },
+                {
+                    "x": "2013",
+                    "y": 0
+                },
+                {
+                    "x": "2014",
+                    "y": 0
+                },
+                {
+                    "x": "2015",
+                    "y": 70
+                },
+                {
+                    "x": "2016",
+                    "y": 0
+                },
+                {
+                    "x": "2017",
+                    "y": 0
+                },
+                {
+                    "x": "2018",
+                    "y": 0
+                },
+                {
+                    "x": "2019",
+                    "y": 170
+                },
+                {
+                    "x": "2020",
+                    "y": 90
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Deaths from mass movements",
+            "legend": "mass movements",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "geophysical",
+            "summary": "Deaths from mass movements",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1903",
+            "end": "2018",
+            "min": 6,
+            "max": 4000,
+            "points": [
+                {
+                    "x": "1903",
+                    "y": 152
+                },
+                {
+                    "x": "1905",
+                    "y": 36
+                },
+                {
+                    "x": "1908",
+                    "y": 66
+                },
+                {
+                    "x": "1937",
+                    "y": 80
+                },
+                {
+                    "x": "1955",
+                    "y": 6
+                },
+                {
+                    "x": "1962",
+                    "y": 4000
+                },
+                {
+                    "x": "1963",
+                    "y": 300
+                },
+                {
+                    "x": "1971",
+                    "y": 62
+                },
+                {
+                    "x": "1980",
+                    "y": 100
+                },
+                {
+                    "x": "1982",
+                    "y": 92
+                },
+                {
+                    "x": "1983",
+                    "y": 914
+                },
+                {
+                    "x": "1985",
+                    "y": 600
+                },
+                {
+                    "x": "1987",
+                    "y": 366
+                },
+                {
+                    "x": "1988",
+                    "y": 314
+                },
+                {
+                    "x": "1989",
+                    "y": 110
+                },
+                {
+                    "x": "1990",
+                    "y": 146
+                },
+                {
+                    "x": "1991",
+                    "y": 172
+                },
+                {
+                    "x": "1992",
+                    "y": 646
+                },
+                {
+                    "x": "1993",
+                    "y": 362
+                },
+                {
+                    "x": "2000",
+                    "y": 22
+                },
+                {
+                    "x": "2002",
+                    "y": 120
+                },
+                {
+                    "x": "2004",
+                    "y": 88
+                },
+                {
+                    "x": "2006",
+                    "y": 22
+                },
+                {
+                    "x": "2008",
+                    "y": 240
+                },
+                {
+                    "x": "2009",
+                    "y": 72
+                },
+                {
+                    "x": "2012",
+                    "y": 32
+                },
+                {
+                    "x": "2013",
+                    "y": 92
+                },
+                {
+                    "x": "2015",
+                    "y": 26
+                },
+                {
+                    "x": "2017",
+                    "y": 16
+                },
+                {
+                    "x": "2018",
+                    "y": 34
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Deaths from storms",
+            "legend": "storms",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "climate",
+            "summary": "Deaths from storms",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1900",
+            "end": "2020",
+            "min": 0,
+            "max": 608990,
+            "points": [
+                {
+                    "x": "1900",
+                    "y": 12000
+                },
+                {
+                    "x": "1902",
+                    "y": 1200
+                },
+                {
+                    "x": "1903",
+                    "y": 326
+                },
+                {
+                    "x": "1904",
+                    "y": 0
+                },
+                {
+                    "x": "1905",
+                    "y": 480
+                },
+                {
+                    "x": "1906",
+                    "y": 20596
+                },
+                {
+                    "x": "1909",
+                    "y": 1426
+                },
+                {
+                    "x": "1910",
+                    "y": 60
+                },
+                {
+                    "x": "1911",
+                    "y": 2000
+                },
+                {
+                    "x": "1912",
+                    "y": 102340
+                },
+                {
+                    "x": "1913",
+                    "y": 1464
+                },
+                {
+                    "x": "1914",
+                    "y": 0
+                },
+                {
+                    "x": "1915",
+                    "y": 4250
+                },
+                {
+                    "x": "1916",
+                    "y": 600
+                },
+                {
+                    "x": "1917",
+                    "y": 8114
+                },
+                {
+                    "x": "1918",
+                    "y": 68
+                },
+                {
+                    "x": "1919",
+                    "y": 1000
+                },
+                {
+                    "x": "1920",
+                    "y": 448
+                },
+                {
+                    "x": "1922",
+                    "y": 200000
+                },
+                {
+                    "x": "1923",
+                    "y": 6278
+                },
+                {
+                    "x": "1924",
+                    "y": 4484
+                },
+                {
+                    "x": "1925",
+                    "y": 1638
+                },
+                {
+                    "x": "1926",
+                    "y": 7136
+                },
+                {
+                    "x": "1927",
+                    "y": 11544
+                },
+                {
+                    "x": "1928",
+                    "y": 8448
+                },
+                {
+                    "x": "1929",
+                    "y": 0
+                },
+                {
+                    "x": "1930",
+                    "y": 8164
+                },
+                {
+                    "x": "1931",
+                    "y": 6400
+                },
+                {
+                    "x": "1932",
+                    "y": 6488
+                },
+                {
+                    "x": "1933",
+                    "y": 126
+                },
+                {
+                    "x": "1934",
+                    "y": 10182
+                },
+                {
+                    "x": "1935",
+                    "y": 125414
+                },
+                {
+                    "x": "1936",
+                    "y": 6618
+                },
+                {
+                    "x": "1937",
+                    "y": 22462
+                },
+                {
+                    "x": "1938",
+                    "y": 1810
+                },
+                {
+                    "x": "1939",
+                    "y": 6
+                },
+                {
+                    "x": "1940",
+                    "y": 246
+                },
+                {
+                    "x": "1941",
+                    "y": 10292
+                },
+                {
+                    "x": "1942",
+                    "y": 202000
+                },
+                {
+                    "x": "1943",
+                    "y": 10000
+                },
+                {
+                    "x": "1944",
+                    "y": 1452
+                },
+                {
+                    "x": "1945",
+                    "y": 8830
+                },
+                {
+                    "x": "1946",
+                    "y": 674
+                },
+                {
+                    "x": "1947",
+                    "y": 9476
+                },
+                {
+                    "x": "1948",
+                    "y": 5942
+                },
+                {
+                    "x": "1949",
+                    "y": 5608
+                },
+                {
+                    "x": "1950",
+                    "y": 1746
+                },
+                {
+                    "x": "1951",
+                    "y": 5722
+                },
+                {
+                    "x": "1952",
+                    "y": 4554
+                },
+                {
+                    "x": "1953",
+                    "y": 3628
+                },
+                {
+                    "x": "1954",
+                    "y": 5938
+                },
+                {
+                    "x": "1955",
+                    "y": 7790
+                },
+                {
+                    "x": "1956",
+                    "y": 6228
+                },
+                {
+                    "x": "1957",
+                    "y": 2278
+                },
+                {
+                    "x": "1958",
+                    "y": 5240
+                },
+                {
+                    "x": "1959",
+                    "y": 19390
+                },
+                {
+                    "x": "1960",
+                    "y": 18328
+                },
+                {
+                    "x": "1961",
+                    "y": 25704
+                },
+                {
+                    "x": "1962",
+                    "y": 3026
+                },
+                {
+                    "x": "1963",
+                    "y": 59930
+                },
+                {
+                    "x": "1964",
+                    "y": 21310
+                },
+                {
+                    "x": "1965",
+                    "y": 119864
+                },
+                {
+                    "x": "1966",
+                    "y": 4654
+                },
+                {
+                    "x": "1967",
+                    "y": 4510
+                },
+                {
+                    "x": "1968",
+                    "y": 3334
+                },
+                {
+                    "x": "1969",
+                    "y": 6504
+                },
+                {
+                    "x": "1970",
+                    "y": 608990
+                },
+                {
+                    "x": "1971",
+                    "y": 21622
+                },
+                {
+                    "x": "1972",
+                    "y": 2746
+                },
+                {
+                    "x": "1973",
+                    "y": 8688
+                },
+                {
+                    "x": "1974",
+                    "y": 23722
+                },
+                {
+                    "x": "1975",
+                    "y": 2082
+                },
+                {
+                    "x": "1976",
+                    "y": 3362
+                },
+                {
+                    "x": "1977",
+                    "y": 30596
+                },
+                {
+                    "x": "1978",
+                    "y": 7352
+                },
+                {
+                    "x": "1979",
+                    "y": 5246
+                },
+                {
+                    "x": "1980",
+                    "y": 2758
+                },
+                {
+                    "x": "1981",
+                    "y": 7580
+                },
+                {
+                    "x": "1982",
+                    "y": 5564
+                },
+                {
+                    "x": "1983",
+                    "y": 7312
+                },
+                {
+                    "x": "1984",
+                    "y": 9730
+                },
+                {
+                    "x": "1985",
+                    "y": 34330
+                },
+                {
+                    "x": "1986",
+                    "y": 3878
+                },
+                {
+                    "x": "1987",
+                    "y": 5800
+                },
+                {
+                    "x": "1988",
+                    "y": 6670
+                },
+                {
+                    "x": "1989",
+                    "y": 8512
+                },
+                {
+                    "x": "1990",
+                    "y": 9208
+                },
+                {
+                    "x": "1991",
+                    "y": 292594
+                },
+                {
+                    "x": "1992",
+                    "y": 2688
+                },
+                {
+                    "x": "1993",
+                    "y": 5930
+                },
+                {
+                    "x": "1994",
+                    "y": 8478
+                },
+                {
+                    "x": "1995",
+                    "y": 7526
+                },
+                {
+                    "x": "1996",
+                    "y": 9162
+                },
+                {
+                    "x": "1997",
+                    "y": 12300
+                },
+                {
+                    "x": "1998",
+                    "y": 49870
+                },
+                {
+                    "x": "1999",
+                    "y": 24540
+                },
+                {
+                    "x": "2000",
+                    "y": 2708
+                },
+                {
+                    "x": "2001",
+                    "y": 3822
+                },
+                {
+                    "x": "2002",
+                    "y": 2764
+                },
+                {
+                    "x": "2003",
+                    "y": 2098
+                },
+                {
+                    "x": "2004",
+                    "y": 13094
+                },
+                {
+                    "x": "2005",
+                    "y": 10502
+                },
+                {
+                    "x": "2006",
+                    "y": 8658
+                },
+                {
+                    "x": "2007",
+                    "y": 12070
+                },
+                {
+                    "x": "2008",
+                    "y": 281970
+                },
+                {
+                    "x": "2009",
+                    "y": 6574
+                },
+                {
+                    "x": "2010",
+                    "y": 3128
+                },
+                {
+                    "x": "2011",
+                    "y": 6206
+                },
+                {
+                    "x": "2012",
+                    "y": 6210
+                },
+                {
+                    "x": "2013",
+                    "y": 17196
+                },
+                {
+                    "x": "2014",
+                    "y": 2864
+                },
+                {
+                    "x": "2015",
+                    "y": 2576
+                },
+                {
+                    "x": "2016",
+                    "y": 3522
+                },
+                {
+                    "x": "2017",
+                    "y": 5120
+                },
+                {
+                    "x": "2018",
+                    "y": 3414
+                },
+                {
+                    "x": "2019",
+                    "y": 5028
+                },
+                {
+                    "x": "2020",
+                    "y": 3446
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Deaths from earthquakes",
+            "legend": "earthquakes",
+            "categories": [
+                "disasters"
+            ],
+            "subCategory": "geophysical",
+            "summary": "Deaths from earthquakes",
+            "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
+            "xUnit": "year",
+            "start": "1900",
+            "end": "2020",
+            "min": 24,
+            "max": 554010,
+            "points": [
+                {
+                    "x": "1900",
+                    "y": 280
+                },
+                {
+                    "x": "1901",
+                    "y": 36
+                },
+                {
+                    "x": "1902",
+                    "y": 18296
+                },
+                {
+                    "x": "1903",
+                    "y": 13260
+                },
+                {
+                    "x": "1904",
+                    "y": 304
+                },
+                {
+                    "x": "1905",
+                    "y": 41458
+                },
+                {
+                    "x": "1906",
+                    "y": 45306
+                },
+                {
+                    "x": "1907",
+                    "y": 26400
+                },
+                {
+                    "x": "1908",
+                    "y": 150000
+                },
+                {
+                    "x": "1909",
+                    "y": 10956
+                },
+                {
+                    "x": "1910",
+                    "y": 5044
+                },
+                {
+                    "x": "1911",
+                    "y": 2594
+                },
+                {
+                    "x": "1912",
+                    "y": 1846
+                },
+                {
+                    "x": "1913",
+                    "y": 2460
+                },
+                {
+                    "x": "1914",
+                    "y": 8564
+                },
+                {
+                    "x": "1915",
+                    "y": 60312
+                },
+                {
+                    "x": "1916",
+                    "y": 362
+                },
+                {
+                    "x": "1917",
+                    "y": 39008
+                },
+                {
+                    "x": "1918",
+                    "y": 20432
+                },
+                {
+                    "x": "1920",
+                    "y": 365296
+                },
+                {
+                    "x": "1922",
+                    "y": 2064
+                },
+                {
+                    "x": "1923",
+                    "y": 301894
+                },
+                {
+                    "x": "1924",
+                    "y": 2074
+                },
+                {
+                    "x": "1925",
+                    "y": 12306
+                },
+                {
+                    "x": "1926",
+                    "y": 24
+                },
+                {
+                    "x": "1927",
+                    "y": 88504
+                },
+                {
+                    "x": "1928",
+                    "y": 1270
+                },
+                {
+                    "x": "1929",
+                    "y": 6540
+                },
+                {
+                    "x": "1930",
+                    "y": 11174
+                },
+                {
+                    "x": "1931",
+                    "y": 28572
+                },
+                {
+                    "x": "1932",
+                    "y": 3254
+                },
+                {
+                    "x": "1933",
+                    "y": 26652
+                },
+                {
+                    "x": "1934",
+                    "y": 240
+                },
+                {
+                    "x": "1935",
+                    "y": 134824
+                },
+                {
+                    "x": "1936",
+                    "y": 1222
+                },
+                {
+                    "x": "1937",
+                    "y": 850
+                },
+                {
+                    "x": "1938",
+                    "y": 298
+                },
+                {
+                    "x": "1939",
+                    "y": 126242
+                },
+                {
+                    "x": "1940",
+                    "y": 2804
+                },
+                {
+                    "x": "1941",
+                    "y": 3312
+                },
+                {
+                    "x": "1942",
+                    "y": 6852
+                },
+                {
+                    "x": "1943",
+                    "y": 13968
+                },
+                {
+                    "x": "1944",
+                    "y": 30500
+                },
+                {
+                    "x": "1945",
+                    "y": 13886
+                },
+                {
+                    "x": "1946",
+                    "y": 10452
+                },
+                {
+                    "x": "1947",
+                    "y": 1272
+                },
+                {
+                    "x": "1948",
+                    "y": 232630
+                },
+                {
+                    "x": "1949",
+                    "y": 19780
+                },
+                {
+                    "x": "1950",
+                    "y": 3900
+                },
+                {
+                    "x": "1951",
+                    "y": 9478
+                },
+                {
+                    "x": "1952",
+                    "y": 706
+                },
+                {
+                    "x": "1953",
+                    "y": 5516
+                },
+                {
+                    "x": "1954",
+                    "y": 6638
+                },
+                {
+                    "x": "1955",
+                    "y": 978
+                },
+                {
+                    "x": "1956",
+                    "y": 1526
+                },
+                {
+                    "x": "1957",
+                    "y": 13940
+                },
+                {
+                    "x": "1958",
+                    "y": 676
+                },
+                {
+                    "x": "1959",
+                    "y": 138
+                },
+                {
+                    "x": "1960",
+                    "y": 37662
+                },
+                {
+                    "x": "1961",
+                    "y": 200
+                },
+                {
+                    "x": "1962",
+                    "y": 24156
+                },
+                {
+                    "x": "1963",
+                    "y": 2770
+                },
+                {
+                    "x": "1964",
+                    "y": 670
+                },
+                {
+                    "x": "1965",
+                    "y": 1390
+                },
+                {
+                    "x": "1966",
+                    "y": 5578
+                },
+                {
+                    "x": "1967",
+                    "y": 1910
+                },
+                {
+                    "x": "1968",
+                    "y": 23142
+                },
+                {
+                    "x": "1969",
+                    "y": 6760
+                },
+                {
+                    "x": "1970",
+                    "y": 156362
+                },
+                {
+                    "x": "1971",
+                    "y": 2216
+                },
+                {
+                    "x": "1972",
+                    "y": 30366
+                },
+                {
+                    "x": "1973",
+                    "y": 1182
+                },
+                {
+                    "x": "1974",
+                    "y": 49658
+                },
+                {
+                    "x": "1975",
+                    "y": 9264
+                },
+                {
+                    "x": "1976",
+                    "y": 554010
+                },
+                {
+                    "x": "1977",
+                    "y": 6232
+                },
+                {
+                    "x": "1978",
+                    "y": 50324
+                },
+                {
+                    "x": "1979",
+                    "y": 4148
+                },
+                {
+                    "x": "1980",
+                    "y": 15278
+                },
+                {
+                    "x": "1981",
+                    "y": 7958
+                },
+                {
+                    "x": "1982",
+                    "y": 1352
+                },
+                {
+                    "x": "1983",
+                    "y": 4296
+                },
+                {
+                    "x": "1984",
+                    "y": 114
+                },
+                {
+                    "x": "1985",
+                    "y": 19704
+                },
+                {
+                    "x": "1986",
+                    "y": 2362
+                },
+                {
+                    "x": "1987",
+                    "y": 10302
+                },
+                {
+                    "x": "1988",
+                    "y": 54078
+                },
+                {
+                    "x": "1989",
+                    "y": 1300
+                },
+                {
+                    "x": "1990",
+                    "y": 85690
+                },
+                {
+                    "x": "1991",
+                    "y": 4908
+                },
+                {
+                    "x": "1992",
+                    "y": 8066
+                },
+                {
+                    "x": "1993",
+                    "y": 20176
+                },
+                {
+                    "x": "1994",
+                    "y": 2484
+                },
+                {
+                    "x": "1995",
+                    "y": 15478
+                },
+                {
+                    "x": "1996",
+                    "y": 1152
+                },
+                {
+                    "x": "1997",
+                    "y": 6118
+                },
+                {
+                    "x": "1998",
+                    "y": 19146
+                },
+                {
+                    "x": "1999",
+                    "y": 43738
+                },
+                {
+                    "x": "2000",
+                    "y": 434
+                },
+                {
+                    "x": "2001",
+                    "y": 42696
+                },
+                {
+                    "x": "2002",
+                    "y": 3278
+                },
+                {
+                    "x": "2003",
+                    "y": 59234
+                },
+                {
+                    "x": "2004",
+                    "y": 454580
+                },
+                {
+                    "x": "2005",
+                    "y": 152482
+                },
+                {
+                    "x": "2006",
+                    "y": 13384
+                },
+                {
+                    "x": "2007",
+                    "y": 1560
+                },
+                {
+                    "x": "2008",
+                    "y": 175836
+                },
+                {
+                    "x": "2009",
+                    "y": 3786
+                },
+                {
+                    "x": "2010",
+                    "y": 453466
+                },
+                {
+                    "x": "2011",
+                    "y": 41892
+                },
+                {
+                    "x": "2012",
+                    "y": 1422
+                },
+                {
+                    "x": "2013",
+                    "y": 2240
+                },
+                {
+                    "x": "2014",
+                    "y": 1548
+                },
+                {
+                    "x": "2015",
+                    "y": 19100
+                },
+                {
+                    "x": "2016",
+                    "y": 2622
+                },
+                {
+                    "x": "2017",
+                    "y": 2024
+                },
+                {
+                    "x": "2018",
+                    "y": 10122
+                },
+                {
+                    "x": "2019",
+                    "y": 524
+                },
+                {
+                    "x": "2020",
+                    "y": 392
+                }
+            ]
+        }
+    ],
+    "start": "1900",
+    "end": "2020"
+}

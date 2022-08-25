@@ -149,21 +149,21 @@
 		// areas in the x-axis which are the left and right padding, though
 		// the viewport itself is NOT padded using CSS
 		viewportWidth = viewport.clientWidth;
-		console.error('scaleX: viewPortWidth', viewportWidth);
+		// console.error('scaleX: viewPortWidth', viewportWidth);
 		// Take off padding to get the drawing width
 		drawingWidth = viewportWidth - Utils.CANVAS_PADDING_LEFT - Utils.CANVAS_PADDING_RIGHT;
-		console.log('scaleX: drawingWidth', drawingWidth);
-		console.log('scaleX: range', options.xRange.range);
+		// console.log('scaleX: drawingWidth', drawingWidth);
+		// console.log('scaleX: range', options.xRange.range);
 		// scale in pixels/x-unit
 		scale = drawingWidth / options.xRange.range;
-		console.log('scaleX: scale (pixels/x unit)', scale);
+		// console.log('scaleX: scale (pixels/x unit)', scale);
 
 		// @todo
 		// startValue = options.xRange.start - paddingLeft / scale;
 		startValue = options.xRange.start;
 		endValue = options.xRange.end;
 
-		console.warn('options', options);
+		// console.warn('options', options);
 		// console.log('data.events', data.events);
 		filteredEvents = Utils.processEvents(
 			dataset.events,

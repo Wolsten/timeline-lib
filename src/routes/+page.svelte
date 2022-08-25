@@ -8,8 +8,9 @@
 	let data;
 
 	if (browser) {
-		// fetch('/data/deaths-from-natural-disasters.json');
-		fetch('/data/history-of-taiwan.json')
+		fetch('/data/deaths-from-natural-disasters.json')
+			// fetch('/data/geologic-timescale.json')
+			// fetch('/data/history-of-taiwan.json')
 			.then((response) => {
 				return response.json();
 			})
