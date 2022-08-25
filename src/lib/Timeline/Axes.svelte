@@ -4,7 +4,6 @@
 	import Utils from '$lib/Utils.js';
 
 	export let xAxis;
-	export let paddingLeft;
 	export let viewportWidth;
 	export let drawingWidth;
 
