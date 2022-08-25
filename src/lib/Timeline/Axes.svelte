@@ -20,7 +20,7 @@
 <!------------------------------------------------------------------------------
 @section HTML
 -------------------------------------------------------------------------------->
-<!-- <p>viewportWidth={viewportWidth}, drawingWidth={drawingWidth}, nTicks={xAxis.majorTicks.length}</p> -->
+<!-- <p>viewportWidth={viewportWidth}, drawingWidth={drawingWidth}, nTicks={xAxis.ticks.length}</p> -->
 
 <svg class="axis" width={viewportWidth} height={AXIS_HEIGHT} transition:fade>
 	<line
@@ -31,14 +31,14 @@
 		y2={MAJOR_TICK_Y1}
 	/>
 
-	{#each xAxis.majorTicks as x, majorIndex}
+	{#each xAxis.ticks as x, majorIndex}
 		<line class="svg-major-tick" x1={x} y1={MAJOR_TICK_Y1} x2={x} y2={MAJOR_TICK_Y2} />
 
 		<text class="svg-major-label" x={x - Utils.MIN_BOX_WIDTH / 4} y={MAJOR_TICK_Y2 + 14}>
-			{Utils.formatYear(xAxis.majorLabels[majorIndex])}
+			{Utils.formatYear(xAxis.labels[majorIndex])}
 		</text>
 
-		<!-- {#if majorIndex < svgMajorTicks.length - 1 && svgMinorTicks.length > 0}
+		<!-- {#if majorIndex < svgticks.length - 1 && svgMinorTicks.length > 0}
         
             {#each svgMinorTicks as deltaX, minorIndex}
 

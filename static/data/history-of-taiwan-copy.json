@@ -1,0 +1,393 @@
+{
+    "xUnit": "date",
+    "min": false,
+    "max": false,
+    "slug": "history-of-taiwan",
+    "name": "History of Taiwan",
+    "categories": [
+        "taiwan",
+        "geopolitics"
+    ],
+    "events": [
+        {
+            "id": 53,
+            "name": "Early Portuguese visitors",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Modern settlement",
+            "start": "1500",
+            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "end": "1624"
+        },
+        {
+            "id": 54,
+            "name": "Dutch East Indian Company control SW Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Dutch rule",
+            "start": "1624",
+            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "end": "1662"
+        },
+        {
+            "id": 55,
+            "name": "Spanish control N Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Spanish rule",
+            "start": "1626",
+            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "end": "1642"
+        },
+        {
+            "id": 56,
+            "name": "Ming loyalists control Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Ming rule",
+            "start": "1662",
+            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "end": "1683"
+        },
+        {
+            "id": 57,
+            "name": "Qing dynasty control N & W coastal areas",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Qing rule",
+            "start": "1683",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia Qing rule (1683–1895) (https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895))",
+            "end": "1885"
+        },
+        {
+            "id": 58,
+            "name": "Becomes province of Qing Empire",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Qing rule",
+            "start": "1885",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia Qing rule (1683–1895) (https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895))",
+            "end": "1912"
+        },
+        {
+            "id": 59,
+            "name": "Japanese rule",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Japanese rule",
+            "start": "1895",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Japanese rule (1895–1945) ( https://en.wikipedia.org/wiki/Taiwan#Japanese_rule_(1895–1945))",
+            "end": "1945"
+        },
+        {
+            "id": 60,
+            "name": "Republic of China",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1912",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "-"
+        },
+        {
+            "id": 63,
+            "name": "ROC take control of Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1945",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 64,
+            "name": "ROC suppress Taiwan residents",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1947",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 65,
+            "name": "People's Republic of China",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "PRC",
+            "start": "1948",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Civil War and the People's Republic (https://en.wikipedia.org/wiki/China#Civil_War_and_the_People's_Republic)",
+            "end": "-"
+        },
+        {
+            "id": 66,
+            "name": "ROC government relocated to Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1949",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "-"
+        },
+        {
+            "id": 67,
+            "name": "Japan renounces all claims to Taiwan",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1952",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 68,
+            "name": "US Mutual Defense Treaty ",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "1954",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 69,
+            "name": "First Export Processing Zone ",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "1966",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 70,
+            "name": "ROC withdraws from U.N.",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "1971",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 71,
+            "name": "Democratic Progressive Party comes into being",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1979",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "1986"
+        },
+        {
+            "id": 72,
+            "name": "Martial law ended",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1987",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 73,
+            "name": "Temporary provisions abolished",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1991",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 74,
+            "name": "Hong Kong talks",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "1992",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 75,
+            "name": "KMT win first presidential election",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1996",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 76,
+            "name": "DPP take power",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "2000",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "2008"
+        },
+        {
+            "id": 77,
+            "name": "Joins WTO",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "2002",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 78,
+            "name": "Referendum Act passed",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "2003",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 79,
+            "name": "Constitutional amendments",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "2005",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 80,
+            "name": "KMT regain power",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "2008",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "2016"
+        },
+        {
+            "id": 81,
+            "name": "Economic agreement signed with China",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "2010",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 82,
+            "name": "Economic cooperation with New Zealand",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "2013",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 83,
+            "name": "First official contacts with China",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "2014",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 84,
+            "name": "First top-level meeting",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "Trade & Diplomacy",
+            "start": "2015",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+        },
+        {
+            "id": 85,
+            "name": "DPP gains power",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "2016",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "-"
+        },
+        {
+            "id": 86,
+            "name": "TEST EVENT",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1500",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "2016"
+        },
+        {
+            "id": 87,
+            "name": "1500 - 1574",
+            "categories": [
+                "taiwan",
+                "geopolitics"
+            ],
+            "subCategory": "ROC",
+            "start": "1500",
+            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "end": "1574"
+        }
+    ],
+    "series": []
+}

@@ -1,21 +1,9 @@
 <script>
 	import { browser } from '$app/env';
 	import Test from '$lib/Test.svelte';
-	import Utils from '$lib/Utils';
 	import '$lib/styles/app.css';
 
-	const settings = {
-		readonly: false,
-		symbols: false,
-		totalise: false,
-		xRange: false,
-		subCats: [],
-		logScale: false,
-		title: '',
-		sort: 'x',
-		categorise: false,
-		filter: ''
-	};
+	const settings = {};
 
 	let data;
 
@@ -26,7 +14,7 @@
 				return response.json();
 			})
 			.then((jsonData) => {
-				console.log('jsonData', jsonData);
+				// console.log('jsonData', jsonData);
 				data = jsonData;
 			});
 	}

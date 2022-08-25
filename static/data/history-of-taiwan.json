@@ -18,7 +18,8 @@
             ],
             "subCategory": "Modern settlement",
             "start": "1500",
-            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "summary": "Taiwan has been home to Malayo-Polynesian peoples for many millenniums. It is commonly believed that Portuguese sailors passing Taiwan record the island’s name as Ilha Formosa, or beautiful island. Taiwan continues to experience visits by small numbers of Chinese merchants, fishermen and pirates.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li></ol>",
             "end": "1624"
         },
         {
@@ -30,7 +31,8 @@
             ],
             "subCategory": "Dutch rule",
             "start": "1624",
-            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "summary": "The Dutch East India Company establishes a base in southwestern Taiwan, initiating a transformation in aboriginal grain production practices and employing Chinese laborers to work on its rice and sugar plantations.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li></ol>",
             "end": "1662"
         },
         {
@@ -42,7 +44,8 @@
             ],
             "subCategory": "Spanish rule",
             "start": "1626",
-            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "summary": "Spanish adventurers establish bases in northern Taiwan but are ousted by the Dutch in 1642.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li></ol>",
             "end": "1642"
         },
         {
@@ -54,7 +57,8 @@
             ],
             "subCategory": "Ming rule",
             "start": "1662",
-            "citations": "Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)",
+            "summary": "Fleeing the Manchurian conquest of the Ming dynasty (1368-1644), Ming loyalists under Zheng Cheng-gong, or Koxinga, drive out the Dutch from Taiwan and establish authority over the island.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li></ol>",
             "end": "1683"
         },
         {
@@ -66,7 +70,8 @@
             ],
             "subCategory": "Qing rule",
             "start": "1683",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia Qing rule (1683–1895) (https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895))",
+            "summary": "Qing dynasty (1644-1912) forces take control of Taiwan’s western and northern coastal areas.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895)\" target=\"_blank\">Wikipedia Qing rule (1683–1895) </a></li></ol>",
             "end": "1885"
         },
         {
@@ -78,7 +83,8 @@
             ],
             "subCategory": "Qing rule",
             "start": "1885",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia Qing rule (1683–1895) (https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895))",
+            "summary": "Taiwan is declared a province of the Qing Empire.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Qing_rule_(1683–1895)\" target=\"_blank\">Wikipedia Qing rule (1683–1895) </a></li></ol>",
             "end": "1912"
         },
         {
@@ -90,7 +96,8 @@
             ],
             "subCategory": "Japanese rule",
             "start": "1895",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Japanese rule (1895–1945) ( https://en.wikipedia.org/wiki/Taiwan#Japanese_rule_(1895–1945))",
+            "summary": "Following defeat in the First Sino-Japanese War (1894-1895), the Qing government signs the Treaty of Shimonoseki, by which it cedes sovereignty over Taiwan to Japan, which rules the island until 1945.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Japanese_rule_(1895–1945)\" target=\"_blank\">Wikipedia - Japanese rule (1895–1945) ( </a></li></ol>",
             "end": "1945"
         },
         {
@@ -102,7 +109,8 @@
             ],
             "subCategory": "ROC",
             "start": "1912",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "Chinese revolutionaries overthrow the Qing Empire and establish the Republic of China (ROC) in 1912. At that time, Taiwan was under Japanese colonial rule as a result of the 1895 Treaty of Shimonoseki, by which the Qing ceded Taiwan to Japan. The ROC government began exercising jurisdiction over Taiwan in 1945 after Japan surrendered at the end of World War II.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "-"
         },
         {
@@ -114,7 +122,8 @@
             ],
             "subCategory": "ROC",
             "start": "1945",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The ROC, U.K. and U.S. jointly issue the Potsdam Declaration, calling for Japan’s unconditional surrender and the carrying-out of the Cairo Declaration.\r\n\r\nAfter World War II, ROC government representatives accept the surrender of Japanese forces in Taiwan. The Chief Executive of Taiwan Province Chen Yi sends a memorandum to the Japanese governor-general of Taiwan, stating that “As the Chief Executive of Taiwan Province of the ROC, …I restore all legal territory, people, administration, political, economic, and cultural facilities and assets of Taiwan [including the Penghu Islands].”",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 64,
@@ -125,7 +134,8 @@
             ],
             "subCategory": "ROC",
             "start": "1947",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The ROC Constitution is promulgated Jan. 1 and is scheduled to take effect Dec. 25. In March and the following months, ROC troops dispatched from China suppress a large-scale uprising of Taiwan residents sparked by the February 28 Incident.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 65,
@@ -136,7 +146,8 @@
             ],
             "subCategory": "PRC",
             "start": "1948",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Civil War and the People's Republic (https://en.wikipedia.org/wiki/China#Civil_War_and_the_People's_Republic)",
+            "summary": "Between 1948 and 1949 a full-scale civil war rages in China between the Kuomintang-led ROC government and the Chinese Communist Party (CPP). The Temporary Provisions Effective During the Period of National Mobilization for Suppression of the Communist Rebellion are enacted, overriding the ROC Constitution and greatly expanding presidential powers. This begins the period of White Terror that lasts until 1991 when the Temporary Provisions are lifted.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/China#Civil_War_and_the_People's_Republic\" target=\"_blank\">Civil War and the People's Republic </a></li></ol>",
             "end": "-"
         },
         {
@@ -148,7 +159,8 @@
             ],
             "subCategory": "ROC",
             "start": "1949",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "The ROC government relocated to Taiwan in 1949 while fighting a civil war with the Chinese Communist Party. Since then, the ROC has continued to exercise effective jurisdiction over the main island of Taiwan and a number of outlying islands, leaving Taiwan and China each under the rule of a different government. The authorities in Beijing have never exercised sovereignty over Taiwan or other islands administered by the ROC.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "-"
         },
         {
@@ -160,7 +172,8 @@
             ],
             "subCategory": "ROC",
             "start": "1952",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Following the 1951 San Francisco Peace Treaty with Japan signed by 48 Allied nations on behalf of the United Nations, the Treaty of Peace is signed between the ROC and Japan at Taipei Guest House, formally ending the state of war between the two parties. It is recognized that under Article 2 of the San Francisco Treaty, Japan has renounced all right, title, and claim to Taiwan (Formosa) and Penghu (the Pescadores) as well as the Spratly Islands and the Paracel Islands. All treaties, conventions and agreements concluded before Dec. 9, 1941, between China and Japan become null and void as a consequence of the war.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 68,
@@ -171,7 +184,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "1954",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The ROC-U.S. Mutual Defense Treaty is signed in Washington.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 69,
@@ -182,7 +196,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "1966",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The first Export Processing Zone is established in Kaohsiung City, southern Taiwan. The creation of such zones propels Taiwan toward becoming a developed nation, setting a paradigm for other countries to follow.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 70,
@@ -193,7 +208,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "1971",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "On Oct. 25, the United Nations General Assembly passes U.N. Resolution 2758 recognizing the People’s Republic of China (PRC) as the only legitimate representative of China to the global body. The ROC withdraws from the U.N.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 71,
@@ -204,7 +220,8 @@
             ],
             "subCategory": "ROC",
             "start": "1979",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "In 1979 democracy activists demonstrating in Kaohsiung are arrested and imprisoned following what is known as the Kaohsiung Incident, which eventually leads to the formation and development of the Democratic Progressive Party in 1986.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "1986"
         },
         {
@@ -216,7 +233,8 @@
             ],
             "subCategory": "ROC",
             "start": "1987",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Martial law, in effect since 1949, ends and bans on the formation of new political parties and news publications are lifted. Democratization goes into high gear.\r\n\r\nCross-strait people-to-people exchanges begin.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 73,
@@ -227,7 +245,8 @@
             ],
             "subCategory": "ROC",
             "start": "1991",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The Temporary Provisions Effective During the Period of National Mobilization for Suppression of the Communist Rebellion are abolished. A complete re-election of all Congressional representatives, including members of the Legislature and National Assembly, takes place from 1991 to 1992, giving the people of Taiwan full representation. From 1991 through 2005, the ROC Constitution undergoes seven rounds of revision. Taiwan becomes a member of the Asia-Pacific Economic Cooperation.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 74,
@@ -238,7 +257,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "1992",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Government-authorized representatives from the ROC and PRC meet for the first time in Hong Kong, and via subsequent communication.  Negotiations arrive at various joint acknowledgements and understandings.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 75,
@@ -249,8 +269,8 @@
             ],
             "subCategory": "ROC",
             "start": "1996",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
-            "end": "2000"
+            "summary": "In 1996 the ROC holds its first-ever direct presidential election, with the KMT’s Lee Teng-hui and running mate Lien Chan garnering 54 percent of the vote.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 76,
@@ -261,7 +281,8 @@
             ],
             "subCategory": "ROC",
             "start": "2000",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "Chen Shui-bian and Annette Hsiu-lien Lu of the DPP are elected president and vice president, ending the KMT’s more than 50-year rule and marking the first transfer of ROC government executive power in Taiwan between political parties.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "2008"
         },
         {
@@ -273,7 +294,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "2002",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Taiwan becomes a member of the World Trade Organization.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 78,
@@ -284,8 +306,8 @@
             ],
             "subCategory": "ROC",
             "start": "2003",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
-            "end": "2004"
+            "summary": "The Legislative Yuan passes the Referendum Act in 2003, providing a legal basis for citizens to vote directly on issues of local or national importance, with the first national referendum held in conjunction with the third direct presidential election, in which Chen and Lu are re-elected with a slight majority.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 79,
@@ -296,7 +318,8 @@
             ],
             "subCategory": "ROC",
             "start": "2005",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The Legislative Yuan passes a constitutional amendment package, halving the number of its seats from 225 to 113 and introducing the single-district, two-votes system for legislative elections.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 80,
@@ -307,7 +330,8 @@
             ],
             "subCategory": "ROC",
             "start": "2008",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "In 2008 Ma Ying-jeou and Vincent C. Siew of the KMT are elected president and vice president of the ROC, garnering 58 percent of the vote and marking the second transfer of ROC government executive power in Taiwan between political parties.\r\n\r\nIn 2012 incumbent Ma Ying-jeou and his new running mate Wu Den-yih, representing the KMT, win the election for president and vice president with 51.6 percent of the vote.\r\n\r\n",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "2016"
         },
         {
@@ -319,7 +343,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "2010",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "The ROC inks the Cross-Straits Economic Cooperation Framework Agreement (ECFA) with China to institutionalize economic and trade relations across the Taiwan Strait.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 82,
@@ -330,7 +355,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "2013",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Taiwan signs an agreement on economic cooperation with New Zealand and an agreement on economic partnership with Singapore.\r\n\r\nTaiwan attends the 38th session of the International Civil Aviation Organization Assembly as the guest of the council’s president.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 83,
@@ -341,7 +367,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "2014",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "Mainland Affairs Council Minister Wang Yu-chi holds a formal meeting with China’s Taiwan Affairs Office director Zhang Zhijun in Nanjing in February, marking the first official contact between the heads of the respective government agencies responsible for cross-strait relations.\r\n\r\nSunflower Movement protesters occupy the Legislature to oppose the passing of the Cross- Strait Service Trade Agreement, preventing its passage.\r\n\r\nA record 11,130 candidates are elected nationwide for nine categories of local government representatives in what are known as the “nine-in-one” local elections.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 84,
@@ -352,7 +379,8 @@
             ],
             "subCategory": "Trade & Diplomacy",
             "start": "2015",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))"
+            "summary": "President Ma and Chinese leader Xi Jinping meet in Singapore in November, marking the first top-level meeting between the two sides in 66 years.\r\nTaiwan signs the WTO’s Trade Facilitation Agreement and submits its instrument of acceptance to the organization.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>"
         },
         {
             "id": 85,
@@ -363,7 +391,8 @@
             ],
             "subCategory": "ROC",
             "start": "2016",
-            "citations": "1. Taiwan Government History of Taiwan (https://taiwan.gov.tw/content_3.php)\r\n2. Wikipedia - Republic of China (1945–1949) (https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949))",
+            "summary": "In 2016 DPP Chairperson Tsai Ing-wen and academic Chen Chien-jen are elected president and vice president of the ROC.\r\n\r\nThe DPP gains its first legislative majority after securing 68 of the 113 seats. \r\n\r\nPresident Tsai Ing-wen officially apologizes on behalf of the government to the nation’s indigenous peoples for the pain and mistreatment they endured for centuries.\r\n\r\nTsai Ing-wen and running mate Lai Ching-te of the ruling DPP party win the 2020 presidential election with 57.1 percent of the vote. The DPP retains its legislative majority.",
+            "citations": "<ol><li><a href=\"https://taiwan.gov.tw/content_3.php\" target=\"_blank\">Taiwan Government History of Taiwan </a></li><li><a href=\"https://en.wikipedia.org/wiki/Taiwan#Republic_of_China_(1945–1949)\" target=\"_blank\">Wikipedia - Republic of China (1945–1949) </a></li></ol>",
             "end": "-"
         }
     ],

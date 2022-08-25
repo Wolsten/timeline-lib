@@ -1,7 +1,8 @@
 import { dev } from '$app/env';
+import { isTemplateMiddle } from 'typescript';
 
 const SYMBOLS = 7 // Must match number of symbol classes in Symbol.svelte
-const MIN_EVENT_WIDTH = 3
+const MIN_EVENT_WIDTH = 4
 const DAYS_IN_MONTH = [
 	31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
 ]
@@ -127,13 +128,13 @@ const eventDates = function (event) {
 	// debugger
 	let html = ''
 	if (event.start != '-') {
-		html += formatDate(event.startDate)
+		html += formatDate(event.start)
 	}
 	if (event.end) {
 		if (event.end == '-') {
 			html += ' - '
 		} else {
-			html += ` - ${formatDate(event.endDate)}`
+			html += ` - ${formatDate(event.end)}`
 		}
 	}
 	html = `(${html})`
@@ -141,19 +142,16 @@ const eventDates = function (event) {
 }
 
 
-const initXAxis = function (xUnit, start, end) {
-	// const s = start.year ? start.year : start
-	// const e = end.year ? end.year : end
-	const s = start.year
-	const e = end.year
+const initXAxis = function (start, end) {
+	const s = start.year ? start.year : start.decimal
+	const e = end.year ? end.year : end.decimal
 	const axis = {
-		majorAxis: [],
-		majorTicks: [],
-		majorLabels: [],
+		values: [],
+		ticks: [],
+		labels: [],
 		majorFirst: s,
 		majorLast: e,
 		majorRange: e - s,
-		xUnit
 	}
 	console.log('new axis', axis)
 	return axis
@@ -161,37 +159,35 @@ const initXAxis = function (xUnit, start, end) {
 
 
 const initSettings = function (userSettings, start, end, subCats) {
-	let settings = {}
 	// Apply default settings where required
-	settings.symbols = userSettings.symbols || false
-	settings.readonly = userSettings.readonly || false
-	settings.totalise = userSettings.totalise || false
-	settings.categorise = userSettings.categorise || false
-	settings.logscale = userSettings.logscale || false
-	settings.search = userSettings.search || ''
-	settings.filter = userSettings.filter || ''
-	settings.title = userSettings.title || ''
-	settings.sort = userSettings.sort || 'x'
-	// if ( userSettings.xRange && userSettings.xRange.start && userSettings.xRange.end ){
-	if (userSettings?.xRange.end !== undefined) {
-		settings.xRange = userSettings.xRange
-		if (userSettings.xRange.start.year && userSettings.xRange.end.year) {
-			settings.xRange.range = userSettings.xRange.end.year - userSettings.xRange.start.year
-		} else {
-			settings.xRange.range = userSettings.xRange.end - userSettings.xRange.start
-		}
-	} else {
-		const s = start.year ? start.year : start
-		const e = end.year ? end.year : end
-		settings.xRange = {
-			start: s,
-			end: e,
-			range: e - s
-		}
+	// Note that only non-defaults should be set in user settings
+	let settings = {
+		symbols: userSettings.symbols || false,
+		readonly: userSettings.readonly || false,
+		totalise: userSettings.totalise || false,
+		categorise: userSettings.categorise || false,
+		logscale: userSettings.logscale || false,
+		search: userSettings.search || '',
+		filter: userSettings.filter || '',
+		title: userSettings.title || '',
+		sort: userSettings.sort || 'x',
+		subCats: userSettings?.subCats?.length > 0 ? userSettings.subCats : subCats
 	}
-
-	settings.subCats = userSettings.subCats.length > 0 ? userSettings.subCats : subCats
-	// console.log('userSettings.subCats', userSettings.subCats, 'subCats', subCats, 'subCats,settings.subCats', settings.subCats)
+	// If have no user settings for xRange then use the data otherwise apply user settings,
+	// checking for whether dealing with dates or simple numbers
+	let s, e
+	if (userSettings.xRange === undefined) {
+		s = start.year ? start.year : start
+		e = end.year ? end.year : end
+	} else {
+		s = userSettings.xRange.start?.year ? userSettings.xRange.start.year : userSettings.xRange.start
+		e = userSettings.xRange.end?.year ? userSettings.xRange.end.year : userSettings.xRange.end
+	}
+	settings.xRange = {
+		start: s,
+		end: e,
+		range: e - s
+	}
 	return settings
 }
 
@@ -326,10 +322,6 @@ const processDataset = function (data) {
 				compareDates(event.start, data.start) == DATE_BEFORE) {
 				data.start = event.start
 			}
-			// // Optional end date
-			// if (event?.end) {
-			// 	event.end = getDateParts(event.end)
-			// }
 		}
 		// Optional end date
 		if (event.end !== undefined) {
@@ -347,22 +339,36 @@ const processDataset = function (data) {
 			}
 		}
 	})
+	// Do the same for each series - would only have these if the 
+	// xUnits are both 'dates'
+	data.series.forEach((item) => {
+		item.points.forEach(point => {
+			if (!data.start || data.start.decimal < point.x) {
+				data.start = { decimal: point.x }
+			}
+			if (!data.end || point.x < data.end.decimal) {
+				data.end = { decimal: point.x }
+			}
+		})
+	})
+	// Set end year to be the start of the following year
+	// if ( data.xUnit === 'date' ){
+	// 	data.end.year = data.end.year + 1
+	// 	data.end.month = 0
+	// 	data.end.day = 0
+	// 	data.end.decimal = data.end.year
+	// }
 
-	data.end.year = data.start.year + Math.round((data.end.year - data.start.year) * 1.02)
-	data.end.month = 0
-	data.end.day = 0
-	data.end.decimal = data.end.year
-
-	console.log('dataset', data)
-
-	data.xAxis = initXAxis(data.xUnit, data.start, data.end)
-
+	// Initialise x axis
+	data.xAxis = initXAxis(data.start, data.end)
+	// Initialise categories and colours
 	const groupsAndSubCats = initCategories(data.events, data.series)
 	data.eventsSubCats = groupsAndSubCats.eventsSubCats
 	data.seriesSubCats = groupsAndSubCats.seriesSubCats
 	const seriesAndGroups = initSeriesColours(data.series, groupsAndSubCats.groups)
 	data.series = seriesAndGroups.series
 	data.groups = seriesAndGroups.groups
+	console.log('dataset', data)
 	return data
 }
 
@@ -396,108 +402,25 @@ const filterEventsBySearchAndCategory = function (events, search, optionsSubCats
 
 const filterEventsByXRange = function (events, scale, startValue, endValue, datasetSubCats) {
 	let filtered = []
-	// let started = false
-	// let ongoing = false
-	// let startsIn = false
-	// let endsIn = false
-	// let start = false
-	// let end = false
-
+	// Scale each event
 	events.forEach((event, index) => {
-
-		// debugger
-
-		// if (event.id == 63) {
-		// 	debugger
-		// }
-
-		const startsIn =
+		if (event.id == 85) {
+			console.error('event', event)
+			// debugger
+		}
+		// Check if starts in the the range defined by 
+		const occursIn =
 			// Already started or ...
 			event.start === '-' ||
 			// ... started after reference startValue &&
-			(event.start.decimal >= startValue &&
-				// ... no end, or ongoing or start before end
-				(event.end === undefined || event.end === '-' || event.start.decimal <= event.end.decimal))
+			event.start.decimal >= startValue &&
+			// ... started before end value
+			event.start.decimal <= endValue &&
+			// ... no end or ongoing or ends before reference endValue
+			(event.end === undefined || event.end === '-' || event.end.decimal <= endValue)
 
-		const endsIn =
-			// Starts in and ...
-			startsIn &&
-			// ... no end or ...
-			(event.end === undefined ||
-				// ... ongoing or ...
-				event.end === '-' ||
-				// ... ends before
-				event.end.decimal <= endValue)
+		if (occursIn) {
 
-		// if (event.start === '-') {
-		// 	started = true
-		// 	startsIn = true
-		// }
-
-		// if (event?.end === '-') {
-		// 	ongoing = true
-		// 	endsIn = true
-		// } else {
-		// 	if (event?.end) {
-		// 		end = event.end
-		// 	} else if (event.start === '-') {
-		// 		end = event.start
-		// 	} else {
-		// 		ongoing = true
-		// 		endsIn = true
-		// 	}
-		// }
-
-
-
-		// Update "already started" and "ongoing" events to be at the extremes
-		// Employ an offset so that the events are not incorrectly filtered
-		// when the x ranges are changed.
-		// if (event.start === '-') {
-		// 	// console.log(event.name,'setting start date to',startValue)
-		// 	event.startDate = {
-		// 		year: startValue - 1,
-		// 		month: 0,
-		// 		day: 0,
-		// 		decimal: startValue - 1
-		// 	}
-		// }
-		// if (event?.end === '-') {
-		// 	// console.log(event.name,'setting end date to',endValue)
-		// 	const year = new Date().getFullYear()
-		// 	event.endDate = {
-		// 		year: year,
-		// 		month: 0,
-		// 		day: 0,
-		// 		decimal: year
-		// 	}
-		// }
-
-		// Range test
-		// console.log('checking event',event)
-
-		// const endDate = event?.end !== '-' ? event.end : event.start
-
-		// let startsIn = false
-		// if (started || (event.start.decimal > startValue){
-		// 	startsIn = true
-		// }
-
-		// if (ongoing || event?.end.decimal)
-
-		// 	const endDate = event.endDate ? event.endDate : event.startDate
-		// const startsIn = event.startDate.year >= startValue &&
-		// 	event.startDate.year <= endValue
-		// const endsIn = endDate.year >= startValue &&
-		// 	endDate.year <= endValue
-
-		// if (startsIn || endsIn) {
-
-		if (endsIn) {
-
-			// debugger
-
-			// console.error(event.name, 'in range')
 			event.index = event.id
 
 			if (event.start.decimal !== undefined) {
@@ -505,18 +428,19 @@ const filterEventsByXRange = function (events, scale, startValue, endValue, data
 			} else {
 				event.left = Math.round((startValue) * scale)
 			}
-			event.left += Utils.CANVAS_PADDING_LEFT
 
 			let right = 0
 			if (event.end === undefined) {
 				right = event.left
 			} else if (event.end === '-') {
-				right = Math.round(endValue * scale)
+				right = Math.round((endValue - startValue) * scale)
 			} else {
 				right = Math.round((event.end.decimal - startValue) * scale)
 			}
 
-			event.width = right - event.left + Utils.CANVAS_PADDING_RIGHT
+			event.width = right - event.left
+
+			event.left += Utils.CANVAS_PADDING_LEFT
 
 			if (event.width < MIN_EVENT_WIDTH) {
 				event.width = MIN_EVENT_WIDTH
@@ -710,51 +634,56 @@ const processSeries = function (set, scale, startValue, endValue) {
 	return filtered
 }
 
+/**
+ * Scale and label the axis based on the current data range defined in xAxis
+ * and constrained by the options range
+ * @param {Object} xAxis 
+ * @param {Number} drawingWidth 
+ * @param {Object} optionsXRange 
+ * @returns {Object}
+ */
+const scaleXAxis = function (xAxis, drawingWidth, optionsXRange) {
 
-const labelAxis = function (xAxis, drawingWidth, xRange) {
-
-	console.warn('labelAxis: range', xRange)
+	console.warn('labelAxis: options x range', optionsXRange)
 
 	// debugger
+	const intervals = Math.floor(drawingWidth / Utils.MIN_BOX_WIDTH)
+	const canvasInterval = Math.round(drawingWidth / intervals)
+	const dataInterval = Math.round(optionsXRange.range / intervals)
 
-	let intervals = xRange.range
-
-	let intervalWidth = drawingWidth / xRange.range
-	if (intervalWidth < Utils.MIN_BOX_WIDTH) {
-		intervals = Math.floor(drawingWidth / Utils.MIN_BOX_WIDTH)
-		intervalWidth = drawingWidth / intervals
-	}
-	const interval = Math.round(xRange.range / intervals)
-	console.log('interval', interval)
+	console.log('intervals, canvasInterval, dataInterval', intervals, canvasInterval, dataInterval)
 
 	let canvasX = Utils.CANVAS_PADDING_LEFT
-	let dataX = xRange.start
+	let dataX = optionsXRange.start
+
+	console.log('old xAxis', xAxis)
 	let newAxis = { ...xAxis }
+	console.log('new xAxis', newAxis)
 
 	// Initialise values, ticks and labels
-	newAxis.majorAxis = []
-	newAxis.majorTicks = []
-	newAxis.majorLabels = []
+	newAxis.values = []
+	newAxis.ticks = []
+	newAxis.labels = []
 
 	for (let i = 0; i <= intervals; i++) {
 
-		newAxis.majorTicks.push(parseInt(canvasX))
+		newAxis.ticks.push(parseInt(canvasX))
 
 		// console.log('units',units)
 
 		if (xAxis.xUnit == 'date') {
-			newAxis.majorAxis.push(parseInt(dataX))
-			newAxis.majorLabels.push(formatYear(parseInt(dataX)))
+			newAxis.values.push(parseInt(dataX))
+			newAxis.labels.push(formatYear(parseInt(dataX)))
 		} else {
-			newAxis.majorAxis.push(parseInt(dataX))
-			newAxis.majorLabels.push(parseInt(dataX))
+			newAxis.values.push(parseInt(dataX))
+			newAxis.labels.push(parseInt(dataX))
 		}
 
-		canvasX += intervalWidth
-		dataX += interval
+		canvasX += canvasInterval
+		dataX += dataInterval
 	}
 
-	newAxis.majorLast = newAxis.majorLabels[newAxis.majorLabels.length - 1]
+	newAxis.majorLast = newAxis.labels[newAxis.labels.length - 1]
 	newAxis.majorRange = newAxis.majorLast - newAxis.majorFirst
 
 	console.table(newAxis)
@@ -830,7 +759,7 @@ const Utils = {
 	processEvents,
 	processSeries,
 	eventDates,
-	labelAxis,
+	scaleXAxis,
 	debounce,
 	toPrecision,
 	formatNumber,

@@ -1,13 +1,12 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 
+	// import Utils from '$lib/Utils.js';
 	import MinMaxRangeSlider from '$lib/components/Inputs/MinMaxRangeSlider.svelte';
-	// import Utils from '$lib/Utils.js'
+	import Utils from '$lib/Utils.js';
 
 	export let xAxis;
 	export let options;
-	export let paddingLeft;
-	export let paddingRight;
 
 	// console.table(options)
 
@@ -16,42 +15,45 @@
 	// Save the original axis
 	let fullAxis = { ...xAxis };
 
+	console.warn('fullAxis', fullAxis, '\noptions', options);
+
 	//console.table(fullAxis);
 
 	let minValue = 0;
-	let maxValue = fullAxis.majorAxis.length - 1;
+	let maxValue = fullAxis.values.length - 1;
 	let start = 0;
 	let end = 0;
 
 	$: if (xAxis) setValues();
 
 	function setValues() {
-		// labels = xAxis.majorLabels
+		// labels = xAxis.labels
 		start = options.xRange.start;
 		end = options.xRange.end;
 
 		// console.log('max',maxValue)
-		console.log('start', start);
-		console.log('end', end);
+		// console.log('start', start);
+		// console.log('end', end);
 
-		for (let i = 0; i < fullAxis.majorAxis.length - 1; i++) {
-			if (start >= fullAxis.majorAxis[i]) {
-				// console.log('start',start, 'major',fullAxis.majorAxis[i])
+		// Find the min value
+		for (let i = 0; i < fullAxis.values.length - 1; i++) {
+			if (start >= fullAxis.values[i]) {
 				minValue = i;
-				// console.log('minValue',minValue)
 			}
 		}
-
-		maxValue = minValue + 1;
-		for (let i = fullAxis.majorAxis.length - 1; i > minValue; i--) {
-			if (end >= fullAxis.majorAxis[i]) {
-				maxValue = i;
+		// Find the max value - defaults to the last value
+		maxValue = fullAxis.values.length - 1;
+		// Loop around all but the last value
+		for (let i = fullAxis.values.length - 2; i > minValue; i--) {
+			if (end >= fullAxis.values[i]) {
+				// Find out which interval it is nearest to - this one or the next
+				const deltaBefore = end - fullAxis.values[i];
+				const deltaAfter = fullAxis.values[i + 1] - end;
+				maxValue = deltaBefore <= deltaAfter ? i : i + 1;
 				break;
 			}
 		}
-
-		// console.log('max',maxValue)
-		// console.log('majorAxis, min & max values', fullAxis.majorAxis, minValue, maxValue)
+		// console.log('max value', maxValue);
 	}
 
 	function handleRange(event) {
@@ -59,32 +61,27 @@
 
 		if (event.detail.type == 'min') {
 			// console.log('new start value', event.detail.value )
-			options.xRange.start = fullAxis.majorAxis[event.detail.value];
+			options.xRange.start = fullAxis.values[event.detail.value];
 			options.xRange.range = options.xRange.end - options.xRange.start;
 			start = options.xRange.start;
 			minValue = event.detail.value;
 		} else if (event.detail.type == 'max') {
 			// console.log('new end value', event.detail.value )
-			options.xRange.end = fullAxis.majorAxis[event.detail.value];
+			options.xRange.end = fullAxis.values[event.detail.value];
 			options.xRange.range = options.xRange.end - options.xRange.start;
 			end = options.xRange.end;
 			maxValue = event.detail.value;
 		}
 
 		dispatch('optionsChanged', { name: 'xRange', data: options.xRange });
-
-		// console.log('major axis',majorAxis)
-		// console.log('new date range', options.xRange)
 	}
 </script>
 
-<div style="padding-left:{paddingLeft}px; padding-right:{paddingRight}px;">
-	<MinMaxRangeSlider
-		labels={fullAxis.majorLabels}
-		{minValue}
-		{maxValue}
-		on:rangeChanged={handleRange}
-	/>
+<div
+	style="padding-left:{Utils.CANVAS_PADDING_LEFT}px; 
+	       padding-right:{Utils.CANVAS_PADDING_RIGHT}px;"
+>
+	<MinMaxRangeSlider labels={fullAxis.labels} {minValue} {maxValue} on:rangeChanged={handleRange} />
 </div>
 
 <style>

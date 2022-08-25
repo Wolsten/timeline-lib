@@ -7,37 +7,31 @@
 	export let settings = {};
 	export let data;
 
-	let dataset = false;
-	let error = false;
+	let dataset;
+	let error;
 
 	onMount(() => {
-		$windowWidth = window.innerWidth;
+		handleResize();
 	});
 
 	function handleResize() {
 		$windowWidth = window.innerWidth;
+		$desktop = $windowWidth >= Utils.NAV_BREAK;
+		$mobile = !$desktop;
 	}
 
-	$: $desktop = $windowWidth >= Utils.NAV_BREAK;
-	$: $mobile = !$desktop;
-
-	$: console.log('Settings', settings);
-	$: {
-		if (data) {
-			dataset = Utils.processDataset(data);
-		}
-	}
+	$: if (data) dataset = Utils.processDataset(data);
 </script>
 
 <svelte:window on:resize={handleResize} />
 
 <div class="container">
-	<header>
-		<h2>{dataset.name}</h2>
-	</header>
 	<main>
 		{#if dataset}
-			<Timeline data={dataset} {settings} />
+			<header>
+				<h2>{dataset.name}</h2>
+			</header>
+			<Timeline {dataset} {settings} />
 		{/if}
 
 		{#if error}

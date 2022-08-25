@@ -14,20 +14,20 @@
 	// import DebugTimeline from "$lib/Timeline/DebugTimeline.svelte"
 	import { windowWidth, touch } from '$lib/stores';
 
-	export let data;
-	export let settings = {};
+	export let dataset;
+	export let settings;
 
 	// Copy the object values - spread retains references so cannot be used
 	// This ensures that the data is not inadvertently shared across instances
 	// of this component
-	data = JSON.parse(JSON.stringify(data));
+	dataset = JSON.parse(JSON.stringify(dataset));
 
-	console.log('Timeline dataset', data);
+	console.log('Timeline dataset', dataset);
 
 	const options = {
-		...Utils.initSettings(settings, data.start, data.end, [
-			...data.eventsSubCats,
-			...data.seriesSubCats
+		...Utils.initSettings(settings, dataset.start, dataset.end, [
+			...dataset.eventsSubCats,
+			...dataset.seriesSubCats
 		]),
 		selectedEvent: false,
 		selectedPoint: false,
@@ -129,7 +129,7 @@
 		}
 	}
 
-	const handleResize = Utils.debounce((event) => {
+	const handleResize = Utils.debounce(() => {
 		// console.log('Handling resize')
 		if (viewport && viewport.clientWidth != viewportWidth) {
 			// viewportWidth = viewport.clientWidth;
@@ -149,15 +149,14 @@
 		// areas in the x-axis which are the left and right padding, though
 		// the viewport itself is NOT padded using CSS
 		viewportWidth = viewport.clientWidth;
-		// console.error('scaleX: viewPortWidth', viewportWidth);
+		console.error('scaleX: viewPortWidth', viewportWidth);
 		// Take off padding to get the drawing width
 		drawingWidth = viewportWidth - Utils.CANVAS_PADDING_LEFT - Utils.CANVAS_PADDING_RIGHT;
-		// console.log('drawingWidth', drawingWidth);
-		// console.log('range', options.xRange);
-		// scale in pixel / x-unit
-		// debugger;
+		console.log('scaleX: drawingWidth', drawingWidth);
+		console.log('scaleX: range', options.xRange.range);
+		// scale in pixels/x-unit
 		scale = drawingWidth / options.xRange.range;
-		// console.log('rescaling', scale)
+		console.log('scaleX: scale (pixels/x unit)', scale);
 
 		// @todo
 		// startValue = options.xRange.start - paddingLeft / scale;
@@ -167,24 +166,24 @@
 		console.warn('options', options);
 		// console.log('data.events', data.events);
 		filteredEvents = Utils.processEvents(
-			data.events,
+			dataset.events,
 			scale,
 			startValue,
 			endValue,
-			data.eventsSubCats,
+			dataset.eventsSubCats,
 			options.subCats,
 			options.search
 		);
 		// console.log('filteredEvents', filteredEvents);
 		// console.log('series',series,'groups',groups,'scale',scale)
-		if (data.series.length > 0)
-			filteredSeries = Utils.processSeries(data.series, scale, startValue, endValue);
-		if (data.groups.length > 0)
-			filteredGroups = Utils.processSeries(data.groups, scale, startValue, endValue);
+		if (dataset.series.length > 0)
+			filteredSeries = Utils.processSeries(dataset.series, scale, startValue, endValue);
+		if (dataset.groups.length > 0)
+			filteredGroups = Utils.processSeries(dataset.groups, scale, startValue, endValue);
 
-		// Reset the x-axis based on fitered data
-		data.xAxis = Utils.labelAxis(data.xAxis, drawingWidth, options.xRange);
-		// console.log('xAxis',xAxis)
+		// Reset the x-axis based on filtered data
+		dataset.xAxis = Utils.scaleXAxis(dataset.xAxis, drawingWidth, options.xRange);
+		console.log('dataset.xAxis', dataset.xAxis);
 	}
 
 	function scrollToSelected() {
@@ -208,13 +207,14 @@
 <figure class="timeline">
 	<div class="timeline-content" class:clickable on:click|stopPropagation={handleClick}>
 		{#if options.readonly}
-			<Caption {options} title={data.name} slug="/explore/{data.slug}" />
+			<Caption {options} title={dataset.name} slug="/explore/{dataset.slug}" />
 		{:else}
 			<Options
 				{options}
-				xAxis={data.xAxis}
-				seriesLength={data.series.length}
-				eventsLength={data.events.length}
+				xAxis={dataset.xAxis}
+				xUnit={dataset.xUnit}
+				seriesLength={dataset.series.length}
+				eventsLength={dataset.events.length}
 				on:optionsChanged={handleOptions}
 			/>
 		{/if}
@@ -244,29 +244,18 @@
 					/>
 				{/if}
 
-				<Axes
-					xAxis={data.xAxis}
-					{viewportWidth}
-					paddingLeft={Utils.CANVAS_PADDING_LEFT}
-					{drawingWidth}
-				/>
+				<Axes xAxis={dataset.xAxis} {viewportWidth} {drawingWidth} />
 			{/if}
 		</div>
 		<!-- </div> -->
 
 		{#if scale !== 0 && options.readonly === false}
-			<XRange
-				xAxis={data.xAxis}
-				paddingLeft={Utils.CANVAS_PADDING_LEFT}
-				paddingRight={Utils.CANVAS_PADDING_RIGHT}
-				{options}
-				on:optionsChanged={handleOptions}
-			/>
+			<XRange xAxis={dataset.xAxis} {options} on:optionsChanged={handleOptions} />
 		{/if}
 
 		<!-- seriesSubCats={data.seriesSubCats}   -->
 		<Legend
-			eventsSubCats={data.eventsSubCats}
+			eventsSubCats={dataset.eventsSubCats}
 			{filteredEvents}
 			{options}
 			on:optionsChanged={handleOptions}
