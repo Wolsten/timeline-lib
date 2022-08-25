@@ -16,34 +16,47 @@
 
 	const dispatch = createEventDispatcher();
 
+	// Save initial x range for resetting
+	let initialXRange;
+
 	options.zoomIn = () => {
+		console.log('Handling zoom in');
 		handleZoomIn(true);
 	};
 
 	function handleZoomIn(focus) {
-		// console.log('Clicked event zoom in - selected=', options.selectedEvent)
+		console.log('Clicked event zoom in - selected=', options.selectedEvent);
 
 		if (focus) {
 			// console.log('Clicked focus')
 
+			if (initialXRange === undefined) {
+				initialXRange = { ...options.xRange };
+			}
+
 			// Only respond if selected is set
 			if (options.selectedEvent) {
-				options.xRange.start = options.selectedEvent.startDate.decimal;
+				options.xRange.start = options.selectedEvent.start.decimal;
 
-				if (options.selectedEvent.endDate) {
-					options.xRange.end = options.selectedEvent.endDate.decimal;
+				if (options.selectedEvent?.end?.decimal !== undefined) {
+					options.xRange.end = options.selectedEvent.end.decimal;
 				} else {
-					// Calculate a sensible range if no end date
-					let pseudoEnd = options.xRange.start + xAxis.majorRange / 20;
-					if (pseudoEnd > xAxis.majorLast) {
-						pseudoEnd = xAxis.majorLast;
+					if (options.selectedEvent?.end === '-') {
+						options.xRange.end = xAxis.majorLast;
+					} else {
+						// Calculate a sensible range if no end date
+						let pseudoEnd = options.xRange.start + xAxis.majorRange / 20;
+						if (pseudoEnd > xAxis.majorLast) {
+							pseudoEnd = xAxis.majorLast;
+						}
+						// options.xRange.end = parseInt(pseudoEnd);
+						options.xRange.end = pseudoEnd;
 					}
-					options.xRange.end = parseInt(pseudoEnd);
 				}
 
 				options.xRange.range = options.xRange.end - options.xRange.start;
 
-				// console.log('options.xRange',options.xRange)
+				console.log('options.xRange', options.xRange);
 
 				dispatch('optionsChanged', { name: 'xRange', data: options.xRange });
 			}
@@ -51,13 +64,7 @@
 			options.selectedEvent = false;
 			options.search = '';
 			options.filter = '';
-
-			// options.zoom = 1
-			options.xRange = {
-				start: xAxis.majorFirst,
-				end: xAxis.majorLast,
-				range: xAxis.majorRange
-			};
+			options.xRange = { ...initialXRange };
 
 			dispatch('optionsChanged', { name: 'selectedEvent', data: options.selectedEvent });
 			dispatch('optionsChanged', { name: 'xRange', data: options.xRange });

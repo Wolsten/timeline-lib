@@ -637,28 +637,28 @@ const processSeries = function (set, scale, startValue, endValue) {
 /**
  * Scale and label the axis based on the current data range defined in xAxis
  * and constrained by the options range
+ * @param {string} xUnit 'date', 'number'
  * @param {Object} xAxis 
  * @param {Number} drawingWidth 
  * @param {Object} optionsXRange 
  * @returns {Object}
  */
-const scaleXAxis = function (xAxis, drawingWidth, optionsXRange) {
+const scaleXAxis = function (xUnit, xAxis, drawingWidth, optionsXRange) {
 
-	console.warn('labelAxis: options x range', optionsXRange)
+	console.warn('scaleXAxis: options x range', optionsXRange)
+	console.log('scaleXAxis: old xAxis')
+	console.table(xAxis)
 
 	// debugger
 	const intervals = Math.floor(drawingWidth / Utils.MIN_BOX_WIDTH)
 	const canvasInterval = Math.round(drawingWidth / intervals)
 	const dataInterval = Math.round(optionsXRange.range / intervals)
 
-	console.log('intervals, canvasInterval, dataInterval', intervals, canvasInterval, dataInterval)
+	console.log('scaleXAxis: intervals, canvasInterval, dataInterval', intervals, canvasInterval, dataInterval)
 
 	let canvasX = Utils.CANVAS_PADDING_LEFT
 	let dataX = optionsXRange.start
-
-	console.log('old xAxis', xAxis)
 	let newAxis = { ...xAxis }
-	console.log('new xAxis', newAxis)
 
 	// Initialise values, ticks and labels
 	newAxis.values = []
@@ -671,7 +671,7 @@ const scaleXAxis = function (xAxis, drawingWidth, optionsXRange) {
 
 		// console.log('units',units)
 
-		if (xAxis.xUnit == 'date') {
+		if (xUnit == 'date') {
 			newAxis.values.push(parseInt(dataX))
 			newAxis.labels.push(formatYear(parseInt(dataX)))
 		} else {

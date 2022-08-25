@@ -182,7 +182,7 @@
 			filteredGroups = Utils.processSeries(dataset.groups, scale, startValue, endValue);
 
 		// Reset the x-axis based on filtered data
-		dataset.xAxis = Utils.scaleXAxis(dataset.xAxis, drawingWidth, options.xRange);
+		dataset.xAxis = Utils.scaleXAxis(dataset.xUnit, dataset.xAxis, drawingWidth, options.xRange);
 		console.log('dataset.xAxis', dataset.xAxis);
 	}
 

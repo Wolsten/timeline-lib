@@ -72,7 +72,7 @@
 			end = options.xRange.end;
 			maxValue = event.detail.value;
 		}
-
+		console.log('XRange: handleRange', options.xRange);
 		dispatch('optionsChanged', { name: 'xRange', data: options.xRange });
 	}
 </script>
