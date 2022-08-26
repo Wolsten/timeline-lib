@@ -98,7 +98,8 @@
 			polylines[index] = '';
 
 			entry.data.forEach((point, i) => {
-				let y = point.y;
+				let y = point.value;
+
 				if (options.logScale) {
 					y = y != 0 ? Math.log10(y) : 1;
 				}
@@ -110,8 +111,8 @@
 			});
 		});
 
-		// console.log('polylines',polylines)
-		// console.table('options.series',options.series)
+		console.log('polylines', polylines);
+		console.table('options.series', options.series);
 	}
 
 	function calculateYRange() {

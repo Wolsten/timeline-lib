@@ -25,7 +25,7 @@
 	console.log('Timeline dataset', dataset);
 
 	const options = {
-		...Utils.initSettings(settings, dataset.start, dataset.end, [
+		...Utils.initSettings(dataset.xUnit, settings, dataset.start, dataset.end, [
 			...dataset.eventsSubCats,
 			...dataset.seriesSubCats
 		]),
@@ -41,10 +41,6 @@
 	let viewportWidth = 0;
 	let drawingWidth = 0;
 	let scale = 0;
-
-	// Adjust start and end values where have "-" start or end dates
-	let startValue;
-	let endValue;
 
 	// Events, series and groups filtered by date range (search and subCats)
 	// Filtering by subCats done in canvas component)
@@ -159,17 +155,17 @@
 		// console.log('scaleX: scale (pixels/x unit)', scale);
 
 		// @todo
-		// startValue = options.xRange.start - paddingLeft / scale;
-		startValue = options.xRange.start;
-		endValue = options.xRange.end;
+		// Use the options xRange - straight numbers (of years for dates)
+		let xStart = options.xRange.start;
+		let xEnd = options.xRange.end;
 
 		// console.warn('options', options);
 		// console.log('data.events', data.events);
 		filteredEvents = Utils.processEvents(
 			dataset.events,
 			scale,
-			startValue,
-			endValue,
+			xStart,
+			xEnd,
 			dataset.eventsSubCats,
 			options.subCats,
 			options.search
@@ -177,9 +173,9 @@
 		// console.log('filteredEvents', filteredEvents);
 		// console.log('series',series,'groups',groups,'scale',scale)
 		if (dataset.series.length > 0)
-			filteredSeries = Utils.processSeries(dataset.series, scale, startValue, endValue);
+			filteredSeries = Utils.processSeries(dataset.series, scale, xStart, xEnd);
 		if (dataset.groups.length > 0)
-			filteredGroups = Utils.processSeries(dataset.groups, scale, startValue, endValue);
+			filteredGroups = Utils.processSeries(dataset.groups, scale, xStart, xEnd);
 
 		// Reset the x-axis based on filtered data
 		dataset.xAxis = Utils.scaleXAxis(dataset.xUnit, dataset.xAxis, drawingWidth, options.xRange);

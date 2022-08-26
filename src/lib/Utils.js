@@ -142,10 +142,8 @@ const eventDates = function (event) {
 
 
 const initXAxis = function (start, end) {
-	// const s = start.year ? start.year : start.decimal
-	// const e = end.year ? end.year : end.decimal
-	const s = parseFloat(start.decimal)
-	const e = parseFloat(end.decimal)
+	const s = isDate(start) ? parseFloat(start.year) : parseFloat(start)
+	const e = isDate(end) ? parseFloat(end.year) : parseFloat(end)
 	const axis = {
 		values: [],
 		ticks: [],
@@ -154,12 +152,12 @@ const initXAxis = function (start, end) {
 		majorLast: e,
 		majorRange: e - s,
 	}
-	console.log('new axis', axis)
+	console.log('initAxis: axis', axis)
 	return axis
 }
 
 
-const initSettings = function (userSettings, start, end, subCats) {
+const initSettings = function (xUnit, userSettings, start, end, subCats) {
 
 	// Apply default settings where required
 	// Note that only non-defaults should be set in user settings
@@ -179,8 +177,6 @@ const initSettings = function (userSettings, start, end, subCats) {
 	// If have no user settings for xRange then use the data otherwise apply user settings,
 	// checking for whether dealing with dates or simple numbers
 	// let s, e
-
-
 	// if (userSettings.xRange === undefined) {
 	// 	s = start.year ? start.year : start.decimal
 	// 	e = end.year ? end.year : end.decimal
@@ -188,17 +184,37 @@ const initSettings = function (userSettings, start, end, subCats) {
 	// 	s = userSettings.start
 	// 	e = userSettings.end
 	// }
+	// console.log('start', start)
 
-	console.log('start', start)
+	// debugger
 
-	const s = userSettings.start !== undefined ? userSettings.start : start
-	const e = userSettings.end !== undefined ? userSettings.end : end
+	let s, e
+	if (xUnit === 'date') {
+		if (userSettings.start !== undefined) {
+			s = getDateParts(userSettings.start).year
+		} else {
+			s = start.year
+		}
+		if (userSettings.end !== undefined) {
+			e = getDateParts(userSettings.end).year
+		} else {
+			e = end.year
+		}
+	} else {
+		s = userSettings.start !== undefined ? parseFloat(userSettings.start) : parseFloat(start)
+		e = userSettings.end !== undefined ? parseFloat(userSettings.end) : parseFloat(end)
+	}
+
+	console.log('s,e', s, e)
 
 	settings.xRange = {
-		start: parseFloat(s),
-		end: parseFloat(e),
+		start: s,
+		end: e,
 		range: e - s
 	}
+
+	console.log('initSettings', settings)
+
 	return settings
 }
 
@@ -321,33 +337,28 @@ const initSeriesColours = function (series, groups) {
 
 
 const processDataset = function (data) {
-
 	// Convert end string dates to date objects and find extremes
-	data.events.forEach((event) => {
-		// Start date
-		if (event.start !== '-') {
-			event.start = getDateParts(event.start)
-			if (!data.start ||
-				compareDates(event.start, data.start) == DATE_BEFORE) {
-				data.start = event.start
-			}
+	data.events.forEach((event, index) => {
+		// if (index === 1) {
+		// 	debugger
+		// }
+		// Get date parts if available - otherwise get back the existing value
+		event.start = getDateParts(event.start)
+		event.end = getDateParts(event.end)
+		// Check start date - compareDates handles '-' ongoing events
+		if (isDate(event.start) &&
+			(data.start === undefined || compareDates(event.start, data.start) == DATE_BEFORE)) {
+			// console.log('setting startdate', event.name, event.start.year)
+			data.start = event.start
 		}
-		// Optional end date
-		if (event.end !== undefined) {
-			if (event.end !== '-') {
-				event.end = getDateParts(event.end)
-				if (event.end) {
-					if (data.start === undefined || compareDates(data.start, event.end) == DATE_BEFORE) {
-						data.end = event.start
-					}
-					if (data.end === undefined || compareDates(data.end, event.end) == DATE_BEFORE) {
-						data.end = event.end
-					}
-				} else {
-				}
-			}
+		// Check (optional end date)
+		if (isDate(event.end) &&
+			(data.end === undefined || compareDates(data.end, event.end) === DATE_BEFORE)) {
+			// console.log('setting enddate', event.name, event.end.year)
+			data.end = event.end
 		}
 	})
+
 	// Do the same for each series
 	// Would only have these if the xUnits are both 'dates' or have no events
 	data.series.forEach((item) => {
@@ -356,8 +367,9 @@ const processDataset = function (data) {
 			// Handle as dates
 			if (data.xUnit === 'date') {
 				point.x = getDateParts(point.x)
-				if (data.start === undefined || compareDates(data.start, point.x) == DATE_BEFORE) {
-					data.end = point.x
+				// console.log('point x', point.x)
+				if (data.start === undefined || compareDates(point.x, data.start) == DATE_BEFORE) {
+					data.start = point.x
 				}
 				if (data.end === undefined || compareDates(data.end, point.x) == DATE_BEFORE) {
 					data.end = point.x
@@ -365,10 +377,10 @@ const processDataset = function (data) {
 				// Handle numbers
 			} else {
 				if (data.start === undefined || data.start.decimal < point.x) {
-					data.start = { decimal: point.x }
+					data.start = point.x
 				}
 				if (data.end === undefined || point.x < data.end.decimal) {
-					data.end = { decimal: point.x }
+					data.end = point.x
 				}
 			}
 			// Max and min y values
@@ -381,8 +393,14 @@ const processDataset = function (data) {
 		})
 	})
 
+	// Shouldn't happen but just in case
+	if (data.end === undefined) {
+		data.end = data.start
+	}
+
 	// Initialise x axis
 	data.xAxis = initXAxis(data.start, data.end)
+
 	// Initialise categories and colours
 	const groupsAndSubCats = initCategories(data.events, data.series)
 	data.eventsSubCats = groupsAndSubCats.eventsSubCats
@@ -422,42 +440,51 @@ const filterEventsBySearchAndCategory = function (events, search, optionsSubCats
 	return filtered
 }
 
-const filterEventsByXRange = function (events, scale, startValue, endValue, datasetSubCats) {
+/**
+ * Filter the events by start/end times and category
+ * @param {Array} events 
+ * @param {Number} scale 
+ * @param {Number} xStart 
+ * @param {Number} xEnd 
+ * @param {Array} datasetSubCats 
+ * @returns {Array}
+ */
+const filterEventsByXRange = function (events, scale, xStart, xEnd, datasetSubCats) {
 	let filtered = []
 	// Scale each event
 	events.forEach((event, index) => {
-		if (event.id == 85) {
-			console.error('event', event)
-			// debugger
-		}
+		// if (event.id == 1) {
+		// 	console.error('event', event)
+		// 	// debugger
+		// }
 		// Check if starts in the the range defined by 
 		const occursIn =
 			// Already started or ...
 			event.start === '-' ||
 			// ... started after reference startValue &&
-			event.start.decimal >= startValue &&
-			// ... started before end value
-			event.start.decimal <= endValue &&
+			event.start.decimal >= xStart &&
+			// ... started before reference end value
+			event.start.decimal <= xEnd &&
 			// ... no end or ongoing or ends before reference endValue
-			(event.end === undefined || event.end === '-' || event.end.decimal <= endValue)
+			(event.end === undefined || event.end === '-' || event.end.decimal <= xEnd)
 
 		if (occursIn) {
 
 			event.index = event.id
 
 			if (event.start.decimal !== undefined) {
-				event.left = Math.round((event.start.decimal - startValue) * scale)
+				event.left = Math.round((event.start.decimal - xStart) * scale)
 			} else {
-				event.left = Math.round((startValue) * scale)
+				event.left = Math.round((xStart) * scale)
 			}
 
 			let right = 0
 			if (event.end === undefined) {
 				right = event.left
 			} else if (event.end === '-') {
-				right = Math.round((endValue - startValue) * scale)
+				right = Math.round((xEnd - xStart) * scale)
 			} else {
-				right = Math.round((event.end.decimal - startValue) * scale)
+				right = Math.round((event.end.decimal - xStart) * scale)
 			}
 
 			event.width = right - event.left
@@ -508,11 +535,12 @@ function getDecimalDate(date) {
 
 const getDateParts = function (stringDate) {
 
-	if (stringDate == undefined || stringDate == '' || stringDate == false || stringDate == '-') {
-		return false
+	if (stringDate === undefined ||
+		stringDate === '-') {
+		return stringDate
 	}
 
-	// console.log('stringDate',stringDate)
+	//console.log('stringDate', stringDate)
 	stringDate = '' + stringDate
 
 	const parts = stringDate.split('-')
@@ -550,10 +578,34 @@ const getDateParts = function (stringDate) {
 	return date
 }
 
+
+const isDate = function (d) {
+	return d !== undefined &&
+		d.day !== undefined &&
+		d.month !== undefined &&
+		d.year !== undefined
+}
+
+const getYearOrValue = function (dv) {
+	if (isDate(dv)) {
+		return dv.year
+	}
+	if (typeof dv === 'number') {
+		return dv
+	}
+	return false
+}
+
+
 const compareDates = function (a, b) {
-	if (!a || !b) {
+
+	if (!isDate(a) && !isDate(b) &&
+		typeof a !== 'number') {
 		return 0
 	}
+	// if (!a || !b) {
+	// 	return 0
+	// }
 	// Sort a before if year earlier
 	if (a.year < b.year) {
 		return -1
@@ -596,42 +648,40 @@ const sortEventsVertically = function (events, datasetSubCats) {
 
 
 
-const processSeries = function (set, scale, startValue, endValue) {
+const processSeries = function (set, scale, xStart, xEnd) {
 
 	let filtered = []
 
 	// console.warn('set',set)
 	// console.log('scale',scale)
-	// console.log('startValue',startValue)
-	// console.log('endValue',endValue)
+	// console.log('xStart',xStart)
+	// console.log('xEnd',xEnd)
 
 	set.forEach((series, index) => {
 
-		filtered[index] = { ...series }
-		filtered[index].data = []
+		filtered[index] = { ...series, data: [] }
 
 		series.points.forEach((point, i) => {
+
+			// debugger
 
 			// Range test
 			let inRange
 
-			// debugger
-			if (point?.date?.year) {
-				inRange = point.date.year >= startValue &&
-					point.date.year <= endValue
+			if (isDate(point.x)) {
+				inRange = point.x.decimal >= xStart && point.x.decimal <= xEnd
 			} else {
-				inRange = point.x >= startValue &&
-					point.x <= endValue
+				inRange = point.x >= xStart && point.x <= xEnd
 			}
 
 			if (inRange) {
 
-				const value = point?.date?.decimal ? point.date.decimal : point.x
-				const x = (value - startValue) * scale
+				const valueX = isDate(point.x) ? point.x.decimal : point.x
+				const canvasX = (valueX - xStart) * scale
 
-				let xLabel = point.x
-				if (point.date) {
-					xLabel = formatDate(point.date)
+				let xLabel = ''
+				if (isDate(point.x)) {
+					xLabel = formatDate(point.x)
 				} else {
 					xLabel = formatYear(point.x)
 				}
@@ -640,10 +690,10 @@ const processSeries = function (set, scale, startValue, endValue) {
 					index,
 					i,
 					xLabel,
-					x: parseInt(x),
-					y: point.y,
+					x: canvasX,
 					// @todo Will need to fix in component - think done in Canvas but need to check
-					//y: 0 // To be scaled in the component
+					value: point.y,
+					y: 0 // To be scaled in the component
 				}
 
 				filtered[index].data.push(newPoint)
@@ -652,7 +702,7 @@ const processSeries = function (set, scale, startValue, endValue) {
 
 	})
 
-	// console.error('filtered',filtered)
+	console.error('filtered', filtered)
 
 	return filtered
 }

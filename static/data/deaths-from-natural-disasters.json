@@ -1,7 +1,5 @@
 {
-    "xUnit": "year",
-    "min": 24,
-    "max": 7400000,
+    "xUnit": "date",
     "slug": "deaths-from-natural-disasters",
     "name": "Deaths from natural disasters",
     "categories": [
@@ -19,9 +17,7 @@
             "subCategory": "climate",
             "summary": "Deaths from landslides",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1909",
-            "end": "2020",
+            "xUnit": "date",
             "min": 36,
             "max": 24000,
             "points": [
@@ -373,9 +369,7 @@
             "subCategory": "meteorological",
             "summary": "Deaths from fog",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1909",
-            "end": "1952",
+            "xUnit": "date",
             "min": 106,
             "max": 8000,
             "points": [
@@ -403,9 +397,7 @@
             "subCategory": "climate",
             "summary": "Deaths from wildfires",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1911",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 2000,
             "points": [
@@ -677,9 +669,7 @@
             "subCategory": "climate",
             "summary": "Deaths from extreme temperatures",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1936",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 149396,
             "points": [
@@ -931,9 +921,7 @@
             "subCategory": "climate",
             "summary": "Deaths from floods",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1900",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 7400000,
             "points": [
@@ -1329,9 +1317,7 @@
             "subCategory": "geophysical",
             "summary": "Deaths from volcanic activity",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1900",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 77380,
             "points": [
@@ -1659,9 +1645,7 @@
             "subCategory": "climate",
             "summary": "Deaths from drought",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1900",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 6000000,
             "points": [
@@ -1973,9 +1957,7 @@
             "subCategory": "geophysical",
             "summary": "Deaths from mass movements",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1903",
-            "end": "2018",
+            "xUnit": "date",
             "min": 6,
             "max": 4000,
             "points": [
@@ -2111,9 +2093,7 @@
             "subCategory": "climate",
             "summary": "Deaths from storms",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1900",
-            "end": "2020",
+            "xUnit": "date",
             "min": 0,
             "max": 608990,
             "points": [
@@ -2597,9 +2577,7 @@
             "subCategory": "geophysical",
             "summary": "Deaths from earthquakes",
             "citations": "<p>Hannah Ritchie and Max Roser (2014) - &quot;Natural Disasters&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a target=\"_blank\" href=\"https://ourworldindata.org/natural-disasters&#39;\">https://ourworldindata.org/natural-disasters&#39;</a> [Online Resource]</p>\n",
-            "xUnit": "year",
-            "start": "1900",
-            "end": "2020",
+            "xUnit": "date",
             "min": 24,
             "max": 554010,
             "points": [
@@ -3081,7 +3059,5 @@
                 }
             ]
         }
-    ],
-    "start": "1900",
-    "end": "2020"
+    ]
 }
