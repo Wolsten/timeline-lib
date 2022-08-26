@@ -218,16 +218,15 @@ const initSettings = function (xUnit, userSettings, start, end, subCats) {
 	return settings
 }
 
-
-const initCategories = function (events, series) {
+const initCategories = function (xUnit, events, set) {
 
 	// console.log('creating new group from series', series)
 	let groups = []
 
 	// Get two lists of unique sub categories
 	let seriesSubCats = new Set
-	series.forEach(entry => {
-		seriesSubCats.add(entry.subCategory)
+	set.forEach(series => {
+		seriesSubCats.add(series.subCategory)
 	})
 
 	let eventsSubCats = new Set
@@ -244,8 +243,10 @@ const initCategories = function (events, series) {
 		seriesSubCats.push('total')
 	}
 
+	// debugger
+
 	// Generate totalised sub category groups
-	if (series.length > 0) {
+	if (set.length > 0) {
 
 		seriesSubCats.forEach((cat, index) => {
 
@@ -259,23 +260,30 @@ const initCategories = function (events, series) {
 				citations: ''
 			}
 
-			series.forEach(item => {
+			set.forEach(series => {
 
-				group.xUnit = item.xUnit
-				group.citations = item.citations
+				group.xUnit = series.xUnit
+				group.citations = series.citations
 
-				if (cat == 'total' || item.subCategory == cat) {
+				if (cat == 'total' || series.subCategory == cat) {
 
-					item.points.forEach(point => {
+					series.points.forEach(point => {
 
 						// Look for point with same x
-						let match = group.points.findIndex(pt => pt.x == point.x)
+						let match = group.points.findIndex(pt => {
+							if (xUnit === 'date') {
+								return pt.x.year == point.x.year
+							} else {
+								return pt.x == point.x
+							}
+						})
 
 						// Create new point or add existing to match
 						if (group.points.length == 0 || match == -1) {
-							match = 0
+							// match = 0
 							// *** IMPORTANT *** MUST PUSH A COPY NOT THE ORIGINAL
 							group.points.push({ ...point })
+							match = group.points.length - 1
 						} else {
 							group.points[match].y += point.y
 						}
@@ -291,14 +299,19 @@ const initCategories = function (events, series) {
 				}
 			})
 
-			group.points.sort((a, b) => a.x - b.x)
+			if (xUnit === 'date') {
+				group.points.sort((a, b) => a.x.year - b.x.year)
+			} else {
+				group.points.sort((a, b) => a.x - b.x)
+			}
 
 			groups.push(group)
 		})
 
 	}
 
-	//console.error('groups',groups,'subcats',subCats)
+	console.error('groups', groups, 'seriesSubCats', seriesSubCats)
+
 	return { groups, eventsSubCats, seriesSubCats }
 }
 
@@ -402,7 +415,7 @@ const processDataset = function (data) {
 	data.xAxis = initXAxis(data.start, data.end)
 
 	// Initialise categories and colours
-	const groupsAndSubCats = initCategories(data.events, data.series)
+	const groupsAndSubCats = initCategories(data.xUnit, data.events, data.series)
 	data.eventsSubCats = groupsAndSubCats.eventsSubCats
 	data.seriesSubCats = groupsAndSubCats.seriesSubCats
 	const seriesAndGroups = initSeriesColours(data.series, groupsAndSubCats.groups)
@@ -690,7 +703,7 @@ const processSeries = function (set, scale, xStart, xEnd) {
 					index,
 					i,
 					xLabel,
-					x: canvasX,
+					x: parseInt(canvasX),
 					// @todo Will need to fix in component - think done in Canvas but need to check
 					value: point.y,
 					y: 0 // To be scaled in the component

@@ -61,7 +61,7 @@
 	// init()
 
 	function init() {
-		// console.error('initialising canvas with options',options)
+		console.error('initialising canvas with options', options);
 		totalise = options.totalise;
 		categorise = options.categorise;
 		logScale = options.logScale;
@@ -111,19 +111,20 @@
 			});
 		});
 
-		console.log('polylines', polylines);
-		console.table('options.series', options.series);
+		// console.log('polylines', polylines);
+		// console.table('options.series', options.series);
 	}
 
 	function calculateYRange() {
 		// Max min values from the series selected
+		// debugger;
 		globalMin = Number.POSITIVE_INFINITY;
 		globalMax = Number.NEGATIVE_INFINITY;
 		items.forEach((entry) => {
 			if (entry.min < globalMin) globalMin = entry.min;
 			if (entry.max > globalMax) globalMax = entry.max;
 		});
-		console.log('Raw globalMin, globalMax', globalMin, globalMax);
+		console.warn('Raw globalMin, globalMax', globalMin, globalMax);
 
 		// Log scale?
 		if (options.logScale) {
@@ -208,7 +209,7 @@
 			if (point) {
 				const y = Utils.formatNumber(point.y);
 				const left = viewportWidth - point.x > 120 ? point.x + 5 : point.x - 120;
-				const top = point.y - 5;
+				const top = point.scaledY - 5;
 				tooltipText = `${point.xLabel}, ${y}`;
 				tooltip.style = `opacity:1;left:${left}px;top:${top}px`;
 			}
@@ -283,7 +284,8 @@
 			{#if width != 1}
 				{#each entry.data as point}
 					<g
-						transform="translate({point.x},{point.y})"
+						class="symbol"
+						transform="translate({point.x},{point.scaledY})"
 						on:click|stopPropagation={() => handleClickedSymbol(point, index)}
 					>
 						<Symbol
@@ -348,8 +350,10 @@
 		text-align: center;
 		font-size: 0.8rem;
 
+		border: 1px solid var(--colour-box-shadow);
 		border-radius: 0.5rem;
 		box-shadow: 0.1rem 0.1rem 0.3rem var(--colour-box-shadow);
+		border-top-left-radius: 0;
 
 		opacity: 0;
 		transition: all 0.3s ease-in-out;
