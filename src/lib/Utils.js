@@ -690,7 +690,7 @@ const processSeries = function (set, scale, xStart, xEnd) {
 			if (inRange) {
 
 				const valueX = isDate(point.x) ? point.x.decimal : point.x
-				const canvasX = (valueX - xStart) * scale
+				const canvasX = Utils.CANVAS_PADDING_LEFT + (valueX - xStart) * scale
 
 				let xLabel = ''
 				if (isDate(point.x)) {
