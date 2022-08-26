@@ -194,7 +194,7 @@
 		if (options.selectedPoint == false) {
 			tooltipText = '';
 			tooltip.style = `opacity:0`;
-		} else if (options.selectedPoint.type == 'series' && options.selectedPoint.i != -1) {
+		} else if (options.selectedPoint.type === 'series' && options.selectedPoint.i != -1) {
 			if (
 				options.series[options.selectedPoint.index] == undefined ||
 				options.series[options.selectedPoint.index].data == undefined
@@ -203,14 +203,15 @@
 			}
 
 			const point = options.series[options.selectedPoint.index].data.find(
-				(point) => point.i == options.selectedPoint.i
+				(pt) => pt.i == options.selectedPoint.i
 			);
 
 			if (point) {
-				const y = Utils.formatNumber(point.y);
+				console.warn('point', point);
+				const value = Utils.formatNumber(point.value);
 				const left = viewportWidth - point.x > 120 ? point.x + 5 : point.x - 120;
 				const top = point.scaledY - 5;
-				tooltipText = `${point.xLabel}, ${y}`;
+				tooltipText = `${point.xLabel}, ${value}`;
 				tooltip.style = `opacity:1;left:${left}px;top:${top}px`;
 			}
 		}

@@ -52,7 +52,7 @@
 							class:active={options.selectedPoint.i == point.i}
 							on:click|stopPropagation={() => selectPoint(point.i)}
 						>
-							<div>{Utils.formatNumber(point.y)}</div>
+							<div>{Utils.formatNumber(point.value)}</div>
 							<div class="x">{point.xLabel}</div>
 						</div>
 					{/each}

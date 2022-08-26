@@ -17,7 +17,10 @@
 	const dispatch = createEventDispatcher();
 
 	// Save initial x range for resetting
-	let initialXRange;
+	let initialXRange = { ...options.xRange };
+	let initialSymbols = options.symbols;
+	let initialCategorise = options.categorise;
+	let initialTotalise = options.totalise;
 
 	options.zoomIn = () => {
 		console.log('Handling zoom in');
@@ -65,6 +68,9 @@
 			options.search = '';
 			options.filter = '';
 			options.xRange = { ...initialXRange };
+			options.symbols = initialSymbols;
+			options.categorise = initialCategorise;
+			options.totalise = initialTotalise;
 
 			dispatch('optionsChanged', { name: 'selectedEvent', data: options.selectedEvent });
 			dispatch('optionsChanged', { name: 'xRange', data: options.xRange });
